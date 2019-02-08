@@ -18,6 +18,13 @@
           #Set7StartButton,#Set8StartButton,#Set9StartButton,\n\
           #Set10StartButton,#Set11StartButton,#Set12StartButton,\n\
           #Set13StartButton").hide();
+    
+    $("#Set2LockPic,#Set3LockPic,\n\
+        #Set4LockPic,#Set5LockPic,#Set6LockPic,\n\
+        #Set7LockPic,#Set8LockPic,#Set9LockPic,\n\
+        #Set10LockPic,#Set11LockPic,#Set12LockPic,\n\
+        #Set13LockPic").hide();
+    
         document.getElementById("progressset2").value=0;
         document.getElementById("progressset3").value=0;
         document.getElementById("progressset4").value=0;
@@ -36,7 +43,7 @@
        $("#set2").removeClass("lockSet");
        $("#set2").addClass("set");
        $("#CardLock2").hide();
-       
+       $("#Set2LockPic").show();
     }
   
    
