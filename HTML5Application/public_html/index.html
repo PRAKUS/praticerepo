@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+         <link href="Stylesheet.css" type="text/css" rel="stylesheet">
+        <script src="jquery-3.3.1.min.js"></script>
+    </head>
+    <body style="height: 1080px">
+        <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+           
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="navbar navbar-brand navbar-custom">
+                           <img class="logo" src="image/logo.png">
+                       </div>
+                    </div>   
+                    <div class="col-sm-8 navbar-right ">
+                        <div class="row  navbar-column">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-1">
+                                <label>Learn</label>
+                            </div>
+                            <div class="col-sm-1">
+                                <label>Pratice</label>
+                            </div>
+                            <div class="col-sm-1">
+                                <label>Jobs</label>
+                            </div>
+                            <div class="col-sm-2">
+                                <label>Leader Board</label>
+                            </div>
+                            <div class="col-sm-1">
+                                <label>More</label>
+                            </div>
+                            <div class="col-sm-2">
+                                <label>Refer And Earn</label>
+                            </div>
+                            <div class="col-sm-1" style="padding: 0px;">
+                                <label>Sign In <span class="glyphicon glyphicon-log-in"></span></label>
+                            </div>
+                            <div class="col-sm-2" style="padding-left: 20px;">
+                                <label>Register<span class="glyphicon glyphicon-log-out"></span></label>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class=" row SecondBar">
+            <div class="col-sm-2">
+                <button class="btn btn-default"><span class="badge">NEWBIE</button>
+            </div>
+            <form  class="col-sm-8">
+                <div class="input-group search_bar">
+                    <input type="text" class="form-control">
+                    <div class="input-group-btn">
+                        <button type="submit" class="btn btn-default">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </div>
+                </div>
+            </form> 
+            <div class="col-sm-2" style="padding-left:80px;">
+                <span class="glyphicon glyphicon-king"><br><label>LEADERBOARD-></label></span>
+                
+            </div>   
+        </div>
+        <div class="layout">
+            <div class="traning_tracker"> 
+                <div class="row" style="margin: 90px 0px 0px 0px;">
+                    <div class="col-lg-6" style="margin-left: 270px;">
+                        <div id="set1" class="set">
+                            <label id="Set1Header" class="setheader">SET 1</label>
+                            <img id="Set1LockPic" class="unlock" src="image/unlock.png">
+                        </div>
+                        <div  class="card" style="margin: 15px 0px 0px 0px;">
+                              <div class="cardp1">
+                            </div>
+                            <div class="score group">
+                                <label class='group'>Score:</label>
+                                <p class='group'>  .......</p>
+                            </div>
+                            <div class='points'>
+                                <h2 class='QuestionNo'>10</h2>
+                                <label>Question</label>
+                            </div>
+                            <progress id="progressset1" class="completion btn" value="10" max="100"></progress>
+                            <div class='secondtag'>
+                                <p style="margin-top:19px; margin-bottom:0px;">Connect Tag</p>
+                            </div>
+                            <div id="startbuttonset1" class='startButtonHolder'>
+                                <button class='startButton'>START</button>
+                            </div>
+                            <div class='card1stbutton'>
+                                <button class='button'>XYZ</button>
+                            </div>
+                            <div class='card2ndbutton'>
+                                <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card3rdbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card4thbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card6thbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card7thbutton'>
+                                 <button class='button' style="width: 60%;">XYZ</button>
+                            </div>
+
+                    </div>
+                    </div>
+                </div>
+                <div class="row" style="margin: 90px 0px 0px 0px;">
+                    <div class="col-lg-6">
+                        <div class="set">
+                           <label id="Set3Header" class="setheader">SET 3</label>
+                            <img id="Set3LockPic" class="unlock" src="image/unlock.png">
+                        </div>
+                        <div class="card" style="margin:15px 0px 0px 0px;">
+                              <div class="cardp1">
+                            </div>
+                            <div class="score group">
+                                <label class='group'>Score:</label>
+                                <p class='group'>  .......</p>
+                            </div>
+                            <div class='points'>
+                                <h2 class='QuestionNo'>10</h2>
+                                <label>Question</label>
+                            </div>
+                            <progress id="progressset3" class="completion btn" value="100" max="100"></progress>
+                            <div class='secondtag'>
+                                <p style="margin-top:19px; margin-bottom:0px;">Connect Tag</p>
+                            </div>
+                            <div class='startButtonHolder'>
+                                <button class='startButton'>START</button>
+                            </div>
+                            <div class='card1stbutton'>
+                                <button class='button'>XYZ</button>
+                            </div>
+                            <div class='card2ndbutton'>
+                                <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card3rdbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card4thbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card6thbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card7thbutton'>
+                                 <button class='button' style="width: 60%;">XYZ</button>
+                            </div>
+
+                    </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div id="set2" class="set">
+                           <label id="Set2LockHeader" class="setheader">SET 2</label>
+                            <img id="Set2LockPic" class="unlock" src="image/unlock.png">
+                        </div>
+                        <div class="card" style="margin:15px 0px 0px 0px;">
+                              <div class="cardp1">
+                            </div>
+                            <div class="score group">
+                                <label class='group'>Score:</label>
+                                <p class='group'>  .......</p>
+                            </div>
+                            <div class='points'>
+                                <h2 class='QuestionNo'>10</h2>
+                                <label>Question</label>
+                            </div>
+                            <progress id="progressset2" class="completion btn" value="100" max="100"></progress>
+                            <div class='secondtag'>
+                                <p style="margin-top:19px; margin-bottom:0px;">Connect Tag</p>
+                            </div>
+                            <div id="Set2StartButton" class='startButtonHolder'>
+                                <button class='startButton'>START</button>
+                            </div>
+                            <div class='card1stbutton'>
+                                <button class='button'>XYZ</button>
+                            </div>
+                            <div class='card2ndbutton'>
+                                <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card3rdbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card4thbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card6thbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card7thbutton'>
+                                 <button class='button' style="width: 60%;">XYZ</button>
+                            </div>
+
+                    </div>
+                    </div>
+                </div>
+                <div class="row" style="margin: 90px 0px 0px 0px;">
+                    <div class="col-lg-6" style="margin-left: 270px;">
+                        <div class="set">
+                          <label id="Set4LockHeader" class="setheader">SET 4</label>
+                            <img id="Set4LockPic" class="unlock" src="image/unlock.png">
+                        </div>
+                        <div class="card" style="margin: 15px 0px 0px 0px;">
+                              <div class="cardp1">
+                            </div>
+                            <div class="score group">
+                                <label class='group'>Score:</label>
+                                <p class='group'>  .......</p>
+                            </div>
+                            <div class='points'>
+                                <h2 class='QuestionNo'>10</h2>
+                                <label>Question</label>
+                            </div>
+                            <progress class="completion btn" value="100" max="100"></progress>
+                            <div class='secondtag'>
+                                <p style="margin-top:19px; margin-bottom:0px;">Connect Tag</p>
+                            </div>
+                            <div class='startButtonHolder'>
+                                <button class='startButton'>START</button>
+                            </div>
+                            <div class='card1stbutton'>
+                                <button class='button'>XYZ</button>
+                            </div>
+                            <div class='card2ndbutton'>
+                                <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card3rdbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card4thbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card6thbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card7thbutton'>
+                                 <button class='button' style="width: 60%;">XYZ</button>
+                            </div>
+
+                    </div>
+                    </div>
+                </div>
+                <div class="row" style="margin: 90px 0px 0px 0px;">
+                    <div class="col-lg-6">
+                        <div class="set">
+                         <label id="Set6LockHeader" class="setheader">SET 6</label>
+                            <img id="Set6LockPic" class="unlock" src="image/unlock.png">
+                        </div>
+                        <div class="card" style="margin:15px 0px 0px 0px;">
+                              <div class="cardp1">
+                            </div>
+                            <div class="score group">
+                                <label class='group'>Score:</label>
+                                <p class='group'>  .......</p>
+                            </div>
+                            <div class='points'>
+                                <h2 class='QuestionNo'>10</h2>
+                                <label>Question</label>
+                            </div>
+                            <progress class="completion btn" value="100" max="100"></progress>
+                            <div class='secondtag'>
+                                <p style="margin-top:19px; margin-bottom:0px;">Connect Tag</p>
+                            </div>
+                            <div class='startButtonHolder'>
+                                <button class='startButton'>START</button>
+                            </div>
+                            <div class='card1stbutton'>
+                                <button class='button'>XYZ</button>
+                            </div>
+                            <div class='card2ndbutton'>
+                                <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card3rdbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card4thbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card6thbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card7thbutton'>
+                                 <button class='button' style="width: 60%;">XYZ</button>
+                            </div>
+
+                    </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="set">
+                            <label id="Set5LockHeader" class="setheader">SET 5</label>
+                            <img id="Set5LockPic" class="unlock" src="image/unlock.png">
+                        </div>
+                        <div class="card" style="margin:15px 0px 0px 0px;">
+                              <div class="cardp1">
+                            </div>
+                            <div class="score group">
+                                <label class='group'>Score:</label>
+                                <p class='group'>  .......</p>
+                            </div>
+                            <div class='points'>
+                                <h2 class='QuestionNo'>10</h2>
+                                <label>Question</label>
+                            </div>
+                            <progress class="completion btn" value="100" max="100"></progress>
+                            <div class='secondtag'>
+                                <p style="margin-top:19px; margin-bottom:0px;">Connect Tag</p>
+                            </div>
+                            <div class='startButtonHolder'>
+                                <button class='startButton'>START</button>
+                            </div>
+                            <div class='card1stbutton'>
+                                <button class='button'>XYZ</button>
+                            </div>
+                            <div class='card2ndbutton'>
+                                <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card3rdbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card4thbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card6thbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card7thbutton'>
+                                 <button class='button' style="width: 60%;">XYZ</button>
+                            </div>
+
+                    </div>
+                    </div>
+                </div>
+                <div class="row" style="margin: 90px 0px 0px 0px;">
+                    <div class="col-lg-6" style="margin-left: 270px;">
+                        <div class="set">
+                            <label id="Set7LockHeader" class="setheader">SET 7</label>
+                            <img id="Set7LockPic" class="unlock" src="image/unlock.png">
+                        </div>
+                        <div class="card" style="margin: 15px 0px 0px 0px;">
+                              <div class="cardp1">
+                            </div>
+                            <div class="score group">
+                                <label class='group'>Score:</label>
+                                <p class='group'>  .......</p>
+                            </div>
+                            <div class='points'>
+                                <h2 class='QuestionNo'>10</h2>
+                                <label>Question</label>
+                            </div>
+                            <progress class="completion btn" value="100" max="100"></progress>
+                            <div class='secondtag'>
+                                <p style="margin-top:19px; margin-bottom:0px;">Connect Tag</p>
+                            </div>
+                            <div class='startButtonHolder'>
+                                <button class='startButton'>START</button>
+                            </div>
+                            <div class='card1stbutton'>
+                                <button class='button'>XYZ</button>
+                            </div>
+                            <div class='card2ndbutton'>
+                                <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card3rdbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card4thbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card6thbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card7thbutton'>
+                                 <button class='button' style="width: 60%;">XYZ</button>
+                            </div>
+
+                    </div>
+                    </div>
+                </div>
+                <div class="row" style="margin: 90px 0px 0px 0px;">
+                    <div class="col-lg-6">
+                        <div class="set">
+                            <label id="Set9LockHeader" class="setheader">SET 9</label>
+                            <img id="Set9LockPic" class="unlock" src="image/unlock.png">
+                        </div>
+                        <div class="card" style="margin:15px 0px 0px 0px;">
+                              <div class="cardp1">
+                            </div>
+                            <div class="score group">
+                                <label class='group'>Score:</label>
+                                <p class='group'>  .......</p>
+                            </div>
+                            <div class='points'>
+                                <h2 class='QuestionNo'>10</h2>
+                                <label>Question</label>
+                            </div>
+                            <progress class="completion btn" value="100" max="100"></progress>
+                            <div class='secondtag'>
+                                <p style="margin-top:19px; margin-bottom:0px;">Connect Tag</p>
+                            </div>
+                            <div class='startButtonHolder'>
+                                <button class='startButton'>START</button>
+                            </div>
+                            <div class='card1stbutton'>
+                                <button class='button'>XYZ</button>
+                            </div>
+                            <div class='card2ndbutton'>
+                                <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card3rdbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card4thbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card6thbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card7thbutton'>
+                                 <button class='button' style="width: 60%;">XYZ</button>
+                            </div>
+
+                    </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="set">
+                           <label id="Set8LockHeader" class="setheader">SET 8</label>
+                            <img id="Set8LockPic" class="unlock" src="image/unlock.png">
+                        </div>
+                        <div class="card" style="margin:15px 0px 0px 0px;">
+                              <div class="cardp1">
+                            </div>
+                            <div class="score group">
+                                <label class='group'>Score:</label>
+                                <p class='group'>  .......</p>
+                            </div>
+                            <div class='points'>
+                                <h2 class='QuestionNo'>10</h2>
+                                <label>Question</label>
+                            </div>
+                            <progress class="completion btn" value="100" max="100"></progress>
+                            <div class='secondtag'>
+                                <p style="margin-top:19px; margin-bottom:0px;">Connect Tag</p>
+                            </div>
+                            <div class='startButtonHolder'>
+                                <button class='startButton'>START</button>
+                            </div>
+                            <div class='card1stbutton'>
+                                <button class='button'>XYZ</button>
+                            </div>
+                            <div class='card2ndbutton'>
+                                <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card3rdbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card4thbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card6thbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card7thbutton'>
+                                 <button class='button' style="width: 60%;">XYZ</button>
+                            </div>
+
+                    </div>
+                    </div>
+                </div>
+                <div class="row" style="margin: 90px 0px 0px 0px;">
+                    <div class="col-lg-6" style="margin-left: 270px;">
+                        <div class="set">
+                           <label id="Set10LockHeader" class="setheader">SET 10</label>
+                            <img id="Set10LockPic" class="unlock" src="image/unlock.png">
+                        </div>
+                        <div class="card" style="margin: 15px 0px 0px 0px;">
+                              <div class="cardp1">
+                            </div>
+                            <div class="score group">
+                                <label class='group'>Score:</label>
+                                <p class='group'>  .......</p>
+                            </div>
+                            <div class='points'>
+                                <h2 class='QuestionNo'>10</h2>
+                                <label>Question</label>
+                            </div>
+                            <progress class="completion btn" value="100" max="100"></progress>
+                            <div class='secondtag'>
+                                <p style="margin-top:19px; margin-bottom:0px;">Connect Tag</p>
+                            </div>
+                            <div class='startButtonHolder'>
+                                <button class='startButton'>START</button>
+                            </div>
+                            <div class='card1stbutton'>
+                                <button class='button'>XYZ</button>
+                            </div>
+                            <div class='card2ndbutton'>
+                                <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card3rdbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card4thbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card6thbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card7thbutton'>
+                                 <button class='button' style="width: 60%;">XYZ</button>
+                            </div>
+
+                    </div>
+                    </div>
+                </div>
+                <div class="row" style="margin: 90px 0px 0px 0px;">
+                    <div class="col-lg-6">
+                        <div class="set">
+                            <label id="Set12LockHeader" class="setheader">SET 12</label>
+                            <img id="Set12LockPic" class="unlock" src="image/unlock.png">
+                        </div>
+                        <div class="card" style="margin:15px 0px 0px 0px;">
+                              <div class="cardp1">
+                            </div>
+                            <div class="score group">
+                                <label class='group'>Score:</label>
+                                <p class='group'>  .......</p>
+                            </div>
+                            <div class='points'>
+                                <h2 class='QuestionNo'>10</h2>
+                                <label>Question</label>
+                            </div>
+                            <progress class="completion btn" value="100" max="100"></progress>
+                            <div class='secondtag'>
+                                <p style="margin-top:19px; margin-bottom:0px;">Connect Tag</p>
+                            </div>
+                            <div class='startButtonHolder'>
+                                <button class='startButton'>START</button>
+                            </div>
+                            <div class='card1stbutton'>
+                                <button class='button'>XYZ</button>
+                            </div>
+                            <div class='card2ndbutton'>
+                                <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card3rdbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card4thbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card6thbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card7thbutton'>
+                                 <button class='button' style="width: 60%;">XYZ</button>
+                            </div>
+
+                    </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="set">
+                            <label id="Set11LockHeader" class="setheader">SET 11</label>
+                            <img id="Set11LockPic" class="unlock" src="image/unlock.png">
+                        </div>
+                        <div class="card" style="margin:15px 0px 0px 0px;">
+                              <div class="cardp1">
+                            </div>
+                            <div class="score group">
+                                <label class='group'>Score:</label>
+                                <p class='group'>  .......</p>
+                            </div>
+                            <div class='points'>
+                                <h2 class='QuestionNo'>10</h2>
+                                <label>Question</label>
+                            </div>
+                            <progress class="completion btn" value="100" max="100"></progress>
+                            <div class='secondtag'>
+                                <p style="margin-top:19px; margin-bottom:0px;">Connect Tag</p>
+                            </div>
+                            <div class='startButtonHolder'>
+                                <button class='startButton'>START</button>
+                            </div>
+                            <div class='card1stbutton'>
+                                <button class='button'>XYZ</button>
+                            </div>
+                            <div class='card2ndbutton'>
+                                <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card3rdbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card4thbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card6thbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card7thbutton'>
+                                 <button class='button' style="width: 60%;">XYZ</button>
+                            </div>
+
+                    </div>
+                    </div>
+                </div>
+                <div class="row" style="margin: 90px 0px 0px 0px;">
+                    <div class="col-lg-6" style="margin-left: 270px;">
+                        <div class="set">
+                            <label id="Set13LockHeader" class="setheader">SET 13</label>
+                            <img id="Set13LockPic" class="unlock" src="image/unlock.png">
+                        </div>
+                        <div class="card" style="margin: 15px 0px 0px 0px;">
+                              <div class="cardp1">
+                            </div>
+                            <div class="score group">
+                                <label class='group'>Score:</label>
+                                <p class='group'>  .......</p>
+                            </div>
+                            <div class='points'>
+                                <h2 class='QuestionNo'>10</h2>
+                                <label>Question</label>
+                            </div>
+                            <progress class="completion btn" value="100" max="100"></progress>
+                            <div class='secondtag'>
+                                <p style="margin-top:19px; margin-bottom:0px;">Connect Tag</p>
+                            </div>
+                            <div class='startButtonHolder'>
+                                <button class='startButton'>START</button>
+                            </div>
+                            <div class='card1stbutton'>
+                                <button class='button'>XYZ</button>
+                            </div>
+                            <div class='card2ndbutton'>
+                                <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card3rdbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card4thbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card6thbutton'>
+                                 <button class='button'>XYZ</button>
+                            </div>
+                             <div class='card7thbutton'>
+                                 <button class='button' style="width: 60%;">XYZ</button>
+                            </div>
+
+                    </div>
+                    </div>
+                </div>
+                
+           </div>
+            <script>
+                    var set1=document.getElementById("progressset1").value;
+                    if (set1!==100)
+                        {
+                         $("#set2").removeClass("set");
+                         $("#set2").addClass("lockSet");
+                         $("#Set2LockPic").hide();
+                         $("#Set2StartButton").hide();
+                         document.getElementById("progressset2").value=0;
+                        }
+                    else
+                        {
+                         $("#set2").removeClass("lockset");
+                         $("#set2").addClass("Set");
+                         $("#Set2LockPic").show();
+                        }
+                        
+            </script>
+            
+            <div class="achivements_tracker">
+                <div class="group">
+                    <span class="circle group">S1</span>
+                    <p class="group">1000 pts</p>
+                    <span class="circle checkpoint">50</span>
+                    <svg class="line">
+                        <line x1="20" y1="0" x2="20" y2="100" class="lineColor">
+                    </svg>
+                </div>
+                <div class="group">
+                    <span class="circle group">S2</span>
+                    <p class="group">1000 pts</p>
+                    <span class="circle checkpoint">50</span>
+                    <svg class="line">
+                        <line x1="20" y1="0" x2="20" y2="100" class="lineColor">
+                    </svg>
+                </div>
+                <div class="group">
+                    <span class="circle group">S3</span>
+                    <p class="group">1000 pts</p>
+                    <span class="circle checkpoint">50</span>
+                    <svg class="line">
+                        <line x1="20" y1="0" x2="20" y2="100" class="lineColor">
+                    </svg>
+                </div>
+                <div class="group">
+                    <span class="circle group">S4</span>
+                    <p class="group">1000 pts</p>
+                    <span class="circle checkpoint">50</span>
+                    <svg class="line">
+                        <line x1="20" y1="0" x2="20" y2="100" class="lineColor">
+                    </svg>
+                </div>
+                <div class="group">
+                    <span class="circle group">S5</span>
+                    <p class="group">1000 pts</p>
+                    <span class="circle checkpoint">50</span>
+                    <svg class="line">
+                        <line x1="20" y1="0" x2="20" y2="100" class="lineColor">
+                    </svg>
+                </div>
+                <div class="group">
+                    <span class="circle group">S6</span>
+                    <p class="group">1000 pts</p>
+                    <span class="circle checkpoint">50</span>
+                    <svg class="line">
+                        <line x1="20" y1="0" x2="20" y2="100" class="lineColor">
+                    </svg>
+                </div>
+                <div class="group">
+                    <span class="circle group">S7</span>
+                    <p class="group">1000 pts</p>
+                    <span class="circle checkpoint">50</span>
+                    <svg class="line">
+                        <line x1="20" y1="0" x2="20" y2="100" class="lineColor">
+                    </svg>
+                </div>
+                <div class="group">
+                    <span class="circle group">S8</span>
+                    <p class="group">1000 pts</p>
+                    <span class="circle checkpoint">50</span>
+                    <svg class="line">
+                        <line x1="20" y1="0" x2="20" y2="100" class="lineColor">
+                    </svg>
+                </div>
+                <div class="group">
+                    <span class="circle group">S9</span>
+                    <p class="group">1000 pts</p>
+                    <span class="circle checkpoint">50</span>
+                    <svg class="line">
+                        <line x1="20" y1="0" x2="20" y2="100" class="lineColor">
+                    </svg>
+                </div>
+                <div class="group">
+                    <span class="circle group">S10</span>
+                    <p class="group">1000 pts</p>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>
