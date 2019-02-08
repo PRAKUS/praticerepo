@@ -12,6 +12,7 @@ and open the template in the editor.
         <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
          <link href="Stylesheet.css" type="text/css" rel="stylesheet">
         <script src="jquery-3.3.1.min.js"></script>
+        
     </head>
     <body style="height: 1080px">
         <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
@@ -99,7 +100,9 @@ and open the template in the editor.
                                 <p style="margin-top:19px; margin-bottom:0px;">Connect Tag</p>
                             </div>
                             <div id="startbuttonset1" class='startButtonHolder'>
-                                <button class='startButton'>START</button>
+                                <a href="#">
+                                    <button class='startButton btn' >START</button>
+                                </a>
                             </div>
                             <div class='card1stbutton'>
                                 <button class='button'>XYZ</button>
@@ -173,8 +176,11 @@ and open the template in the editor.
                            <label id="Set2LockHeader" class="setheader">SET 2</label>
                             <img id="Set2LockPic" class="unlock" src="image/unlock.png">
                         </div>
+                         <div id="CardLock" class="cardLock">
+                            <img src="image/lock.png" class="SetLocker ">
+                        </div>
                         <div class="card" style="margin:15px 0px 0px 0px;">
-                              <div class="cardp1">
+                            <div class="cardp1">
                             </div>
                             <div class="score group">
                                 <label class='group'>Score:</label>
@@ -184,7 +190,7 @@ and open the template in the editor.
                                 <h2 class='QuestionNo'>10</h2>
                                 <label>Question</label>
                             </div>
-                            <progress id="progressset2" class="completion btn" value="100" max="100"></progress>
+                            <progress id="progressset2" class="completion btn" value="0" max="100"></progress>
                             <div class='secondtag'>
                                 <p style="margin-top:19px; margin-bottom:0px;">Connect Tag</p>
                             </div>
@@ -212,7 +218,7 @@ and open the template in the editor.
 
                     </div>
                     </div>
-                </div>
+                </div>               
                 <div class="row" style="margin: 90px 0px 0px 0px;">
                     <div class="col-lg-6" style="margin-left: 270px;">
                         <div class="set">
@@ -669,24 +675,7 @@ and open the template in the editor.
                 </div>
                 
            </div>
-            <script>
-                    var set1=document.getElementById("progressset1").value;
-                    if (set1!==100)
-                        {
-                         $("#set2").removeClass("set");
-                         $("#set2").addClass("lockSet");
-                         $("#Set2LockPic").hide();
-                         $("#Set2StartButton").hide();
-                         document.getElementById("progressset2").value=0;
-                        }
-                    else
-                        {
-                         $("#set2").removeClass("lockset");
-                         $("#set2").addClass("Set");
-                         $("#Set2LockPic").show();
-                        }
-                        
-            </script>
+            
             
             <div class="achivements_tracker">
                 <div class="group">
@@ -768,5 +757,6 @@ and open the template in the editor.
                 
             </div>
         </div>
+        <script src="script.js" type="text/javascript"></script>
     </body>
 </html>
