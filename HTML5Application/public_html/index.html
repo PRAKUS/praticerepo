@@ -10,8 +10,9 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
-         <link href="Stylesheet.css" type="text/css" rel="stylesheet">
+        <link href="Stylesheet.css" type="text/css" rel="stylesheet">
         <script src="jquery-3.3.1.min.js"></script>
+        <script src="jquery.html-svg-connect.js"></script>
         
     </head>
     <body style="height: 1080px">
@@ -77,15 +78,16 @@ and open the template in the editor.
             </div>   
         </div>
         <div class="layout">
-            <div class="traning_tracker"> 
+            <div id="tracker" class="traning_tracker"> 
+                <!--CARD1-->
                 <div class="row" style="margin: 90px 0px 0px 0px;">
                     <div class="col-lg-6" style="margin-left: 270px;">
                         <div id="set1" class="set">
                             <label id="Set1Header" class="setheader">SET 1</label>
                             <img id="Set1LockPic" class="unlock" src="image/unlock.png">
                         </div>
-                        <div  class="card" style="margin: 15px 0px 0px 0px;">
-                              <div class="cardp1">
+                        <div id="card1" class="card" style="margin: 15px 0px 0px 0px;">
+                            <div class="cardp1">
                             </div>
                             <div class="score group">
                                 <label class='group'>Score:</label>
@@ -95,7 +97,7 @@ and open the template in the editor.
                                 <h2 class='QuestionNo'>10</h2>
                                 <label>Question</label>
                             </div>
-                            <progress id="progressset1" class="completion btn" value="10" max="100"></progress>
+                            <progress id="progressset1" class="completion btn" value="0" max="100"></progress>
                             <div class='secondtag'>
                                 <p style="margin-top:19px; margin-bottom:0px;">Connect Tag</p>
                             </div>
@@ -126,14 +128,19 @@ and open the template in the editor.
                     </div>
                     </div>
                 </div>
+                <!--CARD1 finish-->
                 <div class="row" style="margin: 90px 0px 0px 0px;">
+                    <!--   CARD3    -->
                     <div class="col-lg-6">
-                        <div class="set">
+                        <div id="set3" class="set">
                            <label id="Set3Header" class="setheader">SET 3</label>
                             <img id="Set3LockPic" class="unlock" src="image/unlock.png">
                         </div>
-                        <div class="card" style="margin:15px 0px 0px 0px;">
-                              <div class="cardp1">
+                        <div id="CardLock3" class="cardLock">
+                            <img src="image/lock.png" class="SetLocker ">
+                        </div>
+                        <div id="card3" class="card" style="margin:15px 0px 0px 0px;">
+                            <div class="cardp1">
                             </div>
                             <div class="score group">
                                 <label class='group'>Score:</label>
@@ -143,11 +150,11 @@ and open the template in the editor.
                                 <h2 class='QuestionNo'>10</h2>
                                 <label>Question</label>
                             </div>
-                            <progress id="progressset3" class="completion btn" value="100" max="100"></progress>
+                            <progress id="progressset3" class="completion btn" value="0" max="100"></progress>
                             <div class='secondtag'>
                                 <p style="margin-top:19px; margin-bottom:0px;">Connect Tag</p>
                             </div>
-                            <div class='startButtonHolder'>
+                            <div id="Set3StartButton" class='startButtonHolder'>
                                 <button class='startButton'>START</button>
                             </div>
                             <div class='card1stbutton'>
@@ -171,15 +178,16 @@ and open the template in the editor.
 
                     </div>
                     </div>
+                    <!--      CARD3 finish    -->
                     <div class="col-lg-6">
                         <div id="set2" class="set">
-                           <label id="Set2LockHeader" class="setheader">SET 2</label>
-                            <img id="Set2LockPic" class="unlock" src="image/unlock.png">
+                           <label id="Set2UnLockHeader" class="setheader">SET 2</label>
+                            <img id="Set2unLockPic" class="unlock" src="image/unlock.png">
                         </div>
-                         <div id="CardLock" class="cardLock">
+                        <div id="CardLock2" class="cardLock">
                             <img src="image/lock.png" class="SetLocker ">
                         </div>
-                        <div class="card" style="margin:15px 0px 0px 0px;">
+                        <div id="card2" class="card" style="margin:15px 0px 0px 0px;">
                             <div class="cardp1">
                             </div>
                             <div class="score group">
@@ -221,11 +229,14 @@ and open the template in the editor.
                 </div>               
                 <div class="row" style="margin: 90px 0px 0px 0px;">
                     <div class="col-lg-6" style="margin-left: 270px;">
-                        <div class="set">
+                        <div id="set4" class="set">
                           <label id="Set4LockHeader" class="setheader">SET 4</label>
                             <img id="Set4LockPic" class="unlock" src="image/unlock.png">
                         </div>
-                        <div class="card" style="margin: 15px 0px 0px 0px;">
+                        <div id="CardLock4" class="cardLock">
+                            <img src="image/lock.png" class="SetLocker ">
+                        </div>
+                        <div id="card4" class="card" style="margin: 15px 0px 0px 0px;">
                               <div class="cardp1">
                             </div>
                             <div class="score group">
@@ -236,12 +247,12 @@ and open the template in the editor.
                                 <h2 class='QuestionNo'>10</h2>
                                 <label>Question</label>
                             </div>
-                            <progress class="completion btn" value="100" max="100"></progress>
+                            <progress id="progressset4" class="completion btn" value="0" max="100"></progress>
                             <div class='secondtag'>
                                 <p style="margin-top:19px; margin-bottom:0px;">Connect Tag</p>
                             </div>
-                            <div class='startButtonHolder'>
-                                <button class='startButton'>START</button>
+                            <div  id="Set4StartButton" class='startButtonHolder'>
+                                <button  id="Set4StartButton" class='startButton'>START</button>
                             </div>
                             <div class='card1stbutton'>
                                 <button class='button'>XYZ</button>
@@ -267,11 +278,14 @@ and open the template in the editor.
                 </div>
                 <div class="row" style="margin: 90px 0px 0px 0px;">
                     <div class="col-lg-6">
-                        <div class="set">
+                        <div id="set6" class="set">
                          <label id="Set6LockHeader" class="setheader">SET 6</label>
                             <img id="Set6LockPic" class="unlock" src="image/unlock.png">
                         </div>
-                        <div class="card" style="margin:15px 0px 0px 0px;">
+                        <div id="CardLock6" class="cardLock">
+                            <img src="image/lock.png" class="SetLocker ">
+                        </div>
+                        <div id="card6" class="card" style="margin:15px 0px 0px 0px;">
                               <div class="cardp1">
                             </div>
                             <div class="score group">
@@ -282,11 +296,11 @@ and open the template in the editor.
                                 <h2 class='QuestionNo'>10</h2>
                                 <label>Question</label>
                             </div>
-                            <progress class="completion btn" value="100" max="100"></progress>
+                            <progress id="progressset6" class="completion btn" value="0" max="100"></progress>
                             <div class='secondtag'>
                                 <p style="margin-top:19px; margin-bottom:0px;">Connect Tag</p>
                             </div>
-                            <div class='startButtonHolder'>
+                            <div  id="Set6StartButton" class='startButtonHolder'>
                                 <button class='startButton'>START</button>
                             </div>
                             <div class='card1stbutton'>
@@ -311,11 +325,14 @@ and open the template in the editor.
                     </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="set">
+                        <div id="set5" class="set">
                             <label id="Set5LockHeader" class="setheader">SET 5</label>
                             <img id="Set5LockPic" class="unlock" src="image/unlock.png">
                         </div>
-                        <div class="card" style="margin:15px 0px 0px 0px;">
+                        <div id="CardLock5" class="cardLock">
+                            <img src="image/lock.png" class="SetLocker ">
+                        </div>
+                        <div id="card5" class="card" style="margin:15px 0px 0px 0px;">
                               <div class="cardp1">
                             </div>
                             <div class="score group">
@@ -326,12 +343,12 @@ and open the template in the editor.
                                 <h2 class='QuestionNo'>10</h2>
                                 <label>Question</label>
                             </div>
-                            <progress class="completion btn" value="100" max="100"></progress>
+                            <progress id="progressset5" class="completion btn" value="0" max="100"></progress>
                             <div class='secondtag'>
                                 <p style="margin-top:19px; margin-bottom:0px;">Connect Tag</p>
                             </div>
                             <div class='startButtonHolder'>
-                                <button class='startButton'>START</button>
+                                <button  id="Set5StartButton" class='startButton'>START</button>
                             </div>
                             <div class='card1stbutton'>
                                 <button class='button'>XYZ</button>
@@ -357,11 +374,14 @@ and open the template in the editor.
                 </div>
                 <div class="row" style="margin: 90px 0px 0px 0px;">
                     <div class="col-lg-6" style="margin-left: 270px;">
-                        <div class="set">
+                        <div id="set7" class="set">
                             <label id="Set7LockHeader" class="setheader">SET 7</label>
                             <img id="Set7LockPic" class="unlock" src="image/unlock.png">
                         </div>
-                        <div class="card" style="margin: 15px 0px 0px 0px;">
+                        <div id="CardLock7" class="cardLock">
+                            <img src="image/lock.png" class="SetLocker ">
+                        </div>
+                        <div id="card7" class="card" style="margin: 15px 0px 0px 0px;">
                               <div class="cardp1">
                             </div>
                             <div class="score group">
@@ -372,11 +392,11 @@ and open the template in the editor.
                                 <h2 class='QuestionNo'>10</h2>
                                 <label>Question</label>
                             </div>
-                            <progress class="completion btn" value="100" max="100"></progress>
+                            <progress id="progressset7" class="completion btn" value="0" max="100"></progress>
                             <div class='secondtag'>
                                 <p style="margin-top:19px; margin-bottom:0px;">Connect Tag</p>
                             </div>
-                            <div class='startButtonHolder'>
+                            <div  id="Set7StartButton" class='startButtonHolder'>
                                 <button class='startButton'>START</button>
                             </div>
                             <div class='card1stbutton'>
@@ -403,11 +423,14 @@ and open the template in the editor.
                 </div>
                 <div class="row" style="margin: 90px 0px 0px 0px;">
                     <div class="col-lg-6">
-                        <div class="set">
+                        <div id="set9" class="set">
                             <label id="Set9LockHeader" class="setheader">SET 9</label>
                             <img id="Set9LockPic" class="unlock" src="image/unlock.png">
                         </div>
-                        <div class="card" style="margin:15px 0px 0px 0px;">
+                        <div id="CardLock9" class="cardLock">
+                            <img src="image/lock.png" class="SetLocker ">
+                        </div>
+                        <div id="card9" class="card" style="margin:15px 0px 0px 0px;">
                               <div class="cardp1">
                             </div>
                             <div class="score group">
@@ -418,12 +441,12 @@ and open the template in the editor.
                                 <h2 class='QuestionNo'>10</h2>
                                 <label>Question</label>
                             </div>
-                            <progress class="completion btn" value="100" max="100"></progress>
+                            <progress id="progressset9" class="completion btn" value="00" max="100"></progress>
                             <div class='secondtag'>
                                 <p style="margin-top:19px; margin-bottom:0px;">Connect Tag</p>
                             </div>
                             <div class='startButtonHolder'>
-                                <button class='startButton'>START</button>
+                                <button  id="Set9StartButton"class='startButton'>START</button>
                             </div>
                             <div class='card1stbutton'>
                                 <button class='button'>XYZ</button>
@@ -447,11 +470,14 @@ and open the template in the editor.
                     </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="set">
+                        <div id="set8" class="set">
                            <label id="Set8LockHeader" class="setheader">SET 8</label>
                             <img id="Set8LockPic" class="unlock" src="image/unlock.png">
                         </div>
-                        <div class="card" style="margin:15px 0px 0px 0px;">
+                        <div id="CardLock8" class="cardLock">
+                            <img src="image/lock.png" class="SetLocker ">
+                        </div>
+                        <div id="card8" class="card" style="margin:15px 0px 0px 0px;">
                               <div class="cardp1">
                             </div>
                             <div class="score group">
@@ -462,11 +488,11 @@ and open the template in the editor.
                                 <h2 class='QuestionNo'>10</h2>
                                 <label>Question</label>
                             </div>
-                            <progress class="completion btn" value="100" max="100"></progress>
+                            <progress id="progressset8" class="completion btn" value="0" max="100"></progress>
                             <div class='secondtag'>
                                 <p style="margin-top:19px; margin-bottom:0px;">Connect Tag</p>
                             </div>
-                            <div class='startButtonHolder'>
+                            <div  id="Set8StartButton" class='startButtonHolder'>
                                 <button class='startButton'>START</button>
                             </div>
                             <div class='card1stbutton'>
@@ -493,11 +519,14 @@ and open the template in the editor.
                 </div>
                 <div class="row" style="margin: 90px 0px 0px 0px;">
                     <div class="col-lg-6" style="margin-left: 270px;">
-                        <div class="set">
+                        <div id="set10" class="set">
                            <label id="Set10LockHeader" class="setheader">SET 10</label>
                             <img id="Set10LockPic" class="unlock" src="image/unlock.png">
                         </div>
-                        <div class="card" style="margin: 15px 0px 0px 0px;">
+                        <div id="CardLock10" class="cardLock">
+                            <img src="image/lock.png" class="SetLocker ">
+                        </div>
+                        <div id="card10" class="card" style="margin: 15px 0px 0px 0px;">
                               <div class="cardp1">
                             </div>
                             <div class="score group">
@@ -508,11 +537,11 @@ and open the template in the editor.
                                 <h2 class='QuestionNo'>10</h2>
                                 <label>Question</label>
                             </div>
-                            <progress class="completion btn" value="100" max="100"></progress>
+                            <progress id="progressset10" class="completion btn" value="0" max="100"></progress>
                             <div class='secondtag'>
                                 <p style="margin-top:19px; margin-bottom:0px;">Connect Tag</p>
                             </div>
-                            <div class='startButtonHolder'>
+                            <div  id="Set10StartButton" class='startButtonHolder'>
                                 <button class='startButton'>START</button>
                             </div>
                             <div class='card1stbutton'>
@@ -539,11 +568,14 @@ and open the template in the editor.
                 </div>
                 <div class="row" style="margin: 90px 0px 0px 0px;">
                     <div class="col-lg-6">
-                        <div class="set">
+                        <div id="set12" class="set">
                             <label id="Set12LockHeader" class="setheader">SET 12</label>
                             <img id="Set12LockPic" class="unlock" src="image/unlock.png">
                         </div>
-                        <div class="card" style="margin:15px 0px 0px 0px;">
+                        <div id="CardLock12" class="cardLock">
+                            <img src="image/lock.png" class="SetLocker ">
+                        </div>
+                        <div id="card12" class="card" style="margin:15px 0px 0px 0px;">
                               <div class="cardp1">
                             </div>
                             <div class="score group">
@@ -554,11 +586,11 @@ and open the template in the editor.
                                 <h2 class='QuestionNo'>10</h2>
                                 <label>Question</label>
                             </div>
-                            <progress class="completion btn" value="100" max="100"></progress>
+                            <progress id="progressset12" class="completion btn" value="100" max="100"></progress>
                             <div class='secondtag'>
                                 <p style="margin-top:19px; margin-bottom:0px;">Connect Tag</p>
                             </div>
-                            <div class='startButtonHolder'>
+                            <div  id="Set12StartButton" class='startButtonHolder'>
                                 <button class='startButton'>START</button>
                             </div>
                             <div class='card1stbutton'>
@@ -583,11 +615,14 @@ and open the template in the editor.
                     </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="set">
+                        <div id="set11" class="set">
                             <label id="Set11LockHeader" class="setheader">SET 11</label>
                             <img id="Set11LockPic" class="unlock" src="image/unlock.png">
                         </div>
-                        <div class="card" style="margin:15px 0px 0px 0px;">
+                        <div id="CardLock11" class="cardLock">
+                            <img src="image/lock.png" class="SetLocker ">
+                        </div>
+                        <div id="card11" class="card" style="margin:15px 0px 0px 0px;">
                               <div class="cardp1">
                             </div>
                             <div class="score group">
@@ -598,12 +633,12 @@ and open the template in the editor.
                                 <h2 class='QuestionNo'>10</h2>
                                 <label>Question</label>
                             </div>
-                            <progress class="completion btn" value="100" max="100"></progress>
+                            <progress id="progressset11" class="completion btn" value="0" max="100"></progress>
                             <div class='secondtag'>
                                 <p style="margin-top:19px; margin-bottom:0px;">Connect Tag</p>
                             </div>
                             <div class='startButtonHolder'>
-                                <button class='startButton'>START</button>
+                                <button  id="Set11StartButton" class='startButton'>START</button>
                             </div>
                             <div class='card1stbutton'>
                                 <button class='button'>XYZ</button>
@@ -629,11 +664,14 @@ and open the template in the editor.
                 </div>
                 <div class="row" style="margin: 90px 0px 0px 0px;">
                     <div class="col-lg-6" style="margin-left: 270px;">
-                        <div class="set">
+                        <div id="set13" class="set">
                             <label id="Set13LockHeader" class="setheader">SET 13</label>
                             <img id="Set13LockPic" class="unlock" src="image/unlock.png">
                         </div>
-                        <div class="card" style="margin: 15px 0px 0px 0px;">
+                        <div id="CardLock13" class="cardLock">
+                            <img src="image/lock.png" class="SetLocker ">
+                        </div>
+                        <div id="card13" class="card" style="margin: 15px 0px 0px 0px;">
                               <div class="cardp1">
                             </div>
                             <div class="score group">
@@ -644,12 +682,12 @@ and open the template in the editor.
                                 <h2 class='QuestionNo'>10</h2>
                                 <label>Question</label>
                             </div>
-                            <progress class="completion btn" value="100" max="100"></progress>
+                            <progress id="progressset13" class="completion btn" value="100" max="100"></progress>
                             <div class='secondtag'>
                                 <p style="margin-top:19px; margin-bottom:0px;">Connect Tag</p>
                             </div>
                             <div class='startButtonHolder'>
-                                <button class='startButton'>START</button>
+                                <button  id="Set13StartButton" class='startButton'>START</button>
                             </div>
                             <div class='card1stbutton'>
                                 <button class='button'>XYZ</button>
@@ -675,13 +713,11 @@ and open the template in the editor.
                 </div>
                 
            </div>
-            
-            
             <div class="achivements_tracker">
                 <div class="group">
                     <span class="circle group">S1</span>
                     <p class="group">1000 pts</p>
-                    <span class="circle checkpoint">50</span>
+                    <img  class="checkpoint" src="image/achiv.png">
                     <svg class="line">
                         <line x1="20" y1="0" x2="20" y2="100" class="lineColor">
                     </svg>
@@ -689,7 +725,7 @@ and open the template in the editor.
                 <div class="group">
                     <span class="circle group">S2</span>
                     <p class="group">1000 pts</p>
-                    <span class="circle checkpoint">50</span>
+                   
                     <svg class="line">
                         <line x1="20" y1="0" x2="20" y2="100" class="lineColor">
                     </svg>
@@ -697,15 +733,15 @@ and open the template in the editor.
                 <div class="group">
                     <span class="circle group">S3</span>
                     <p class="group">1000 pts</p>
-                    <span class="circle checkpoint">50</span>
+                    
                     <svg class="line">
                         <line x1="20" y1="0" x2="20" y2="100" class="lineColor">
                     </svg>
                 </div>
                 <div class="group">
-                    <span class="circle group">S4</span>
+                    <span class="circle">S4</span>
                     <p class="group">1000 pts</p>
-                    <span class="circle checkpoint">50</span>
+                    <span ><img class=" checkpoint" src="image/tag.png"></span>
                     <svg class="line">
                         <line x1="20" y1="0" x2="20" y2="100" class="lineColor">
                     </svg>
@@ -713,7 +749,6 @@ and open the template in the editor.
                 <div class="group">
                     <span class="circle group">S5</span>
                     <p class="group">1000 pts</p>
-                    <span class="circle checkpoint">50</span>
                     <svg class="line">
                         <line x1="20" y1="0" x2="20" y2="100" class="lineColor">
                     </svg>
@@ -721,7 +756,7 @@ and open the template in the editor.
                 <div class="group">
                     <span class="circle group">S6</span>
                     <p class="group">1000 pts</p>
-                    <span class="circle checkpoint">50</span>
+                    <img class="checkpoint" src="image/Gift.png">
                     <svg class="line">
                         <line x1="20" y1="0" x2="20" y2="100" class="lineColor">
                     </svg>
@@ -729,7 +764,6 @@ and open the template in the editor.
                 <div class="group">
                     <span class="circle group">S7</span>
                     <p class="group">1000 pts</p>
-                    <span class="circle checkpoint">50</span>
                     <svg class="line">
                         <line x1="20" y1="0" x2="20" y2="100" class="lineColor">
                     </svg>
@@ -737,7 +771,6 @@ and open the template in the editor.
                 <div class="group">
                     <span class="circle group">S8</span>
                     <p class="group">1000 pts</p>
-                    <span class="circle checkpoint">50</span>
                     <svg class="line">
                         <line x1="20" y1="0" x2="20" y2="100" class="lineColor">
                     </svg>
@@ -745,7 +778,7 @@ and open the template in the editor.
                 <div class="group">
                     <span class="circle group">S9</span>
                     <p class="group">1000 pts</p>
-                    <span class="circle checkpoint">50</span>
+                    <img class="checkpoint" src="image/trophy.png">
                     <svg class="line">
                         <line x1="20" y1="0" x2="20" y2="100" class="lineColor">
                     </svg>

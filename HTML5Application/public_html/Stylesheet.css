@@ -39,10 +39,6 @@ navbar-column >div
     position: absolute;
     
 }
-SecondBar >div
-{
-    display:inline-block;
-}
 .btn-default
 {
 background-color:white;   
@@ -87,6 +83,7 @@ margin-left:20px;
     grid-column-start:LR1C1;
     grid-column-stop:LR1C1;
     grid-row-start:LR1C1; 
+
 }
 .set
 {
@@ -116,10 +113,6 @@ margin-left:20px;
     width:30px;
     margin-left: 60px;
    position: absolute;
-}
-.lock
-{
-    
 }
 .setheader
 {
@@ -328,4 +321,6 @@ cardLock:hover
 {
     position: absolute;
     margin-top: 60px;
+    height: 60px;
+    width: 60px;
 }
