@@ -1,0 +1,310 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 7, 2019, 2:00:44 PM
+    Author     : Pramod
+*/
+
+.navbar-custom
+{
+    padding:0px;
+    height: 20px;
+}
+.logo
+{
+    height:50px;
+    width:100px;
+    margin-left: 20px;
+}
+
+.navbar-column
+{
+    padding-left: 10%;
+   padding-top: 15px;
+    
+}
+navbar-column >div
+{
+    width: 50px;
+    padding: 0px;
+    
+        
+}
+.SecondBar
+{   
+    margin-top: 80px;
+    position: absolute;
+    
+}
+SecondBar >div
+{
+    display:inline-block;
+}
+.btn-default
+{
+background-color:white;   
+border-radius: 60px;
+margin-left:20px;
+}
+.badge
+{
+   background-color: white;
+   color: white;
+}
+.form-control
+{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.search_bar
+{
+   width:80%;
+   margin-left: 10%;
+   margin-right:0px;
+  
+   
+}
+.badge
+{
+    background-color: white;
+    color:white;
+}
+.layout
+{
+    display:grid;
+    grid-template-areas:"LR1C1 LR1C2";
+    grid-template-rows:100%;
+    grid-template-columns:80% 20%;
+    margin-top: 100px;
+    position: absolute;
+    width: 100%;
+}
+.traning_tracker
+{
+    grid-column-start:LR1C1;
+    grid-column-stop:LR1C1;
+    grid-row-start:LR1C1; 
+}
+.set
+{
+    background-image: linear-gradient(to right, #01e83e,#65f6c8);
+    width:200px;
+    height:40px; 
+    margin-left: 40px;
+    z-index: 1;
+    position:absolute;
+    border-radius:10px;
+    
+    
+}
+.lockSet
+{
+    background-color:silver; 
+    width:200px;
+    height:40px; 
+    margin-left: 40px;
+    z-index: 1;
+    position:absolute;
+    border-radius:10px;
+}
+.unlock
+{
+    height:30px;
+    width:30px;
+    margin-left: 60px;
+   position: absolute;
+}
+.lock
+{
+    
+}
+.setheader
+{
+    color:white;
+    margin:12px 40px 0px 20px;    
+}
+.cardContainer
+{
+    margin-left: 20%;
+   
+    
+}
+.card
+{   
+    height: 250px;
+    width: 500px;
+    display:grid;
+    grid-template-areas:"CR1C1 CR1C1 CR1C1 CR1C1"
+                        "CR2C1 CR2C2 CR2C3 CR2C3"
+                        "CR3C1 CR3C2 CR3C2 CR3C2"
+                        "CR4C1 CR4C1 CR4C3 CR4C3"
+                        "CR5C1 CR5C2 CR5C3 CR5C4"
+                        "CR6C1 CR6C1 CR6C3 CR6C3";
+    grid-template-rows:5% 7% 40% 18% 15% 15%;
+    grid-template-columns:25% 25% 25% 25%;
+    background-image: linear-gradient(to top,#000000,#4a4848);
+    border-radius:10px; 
+    padding:10px 20px 10px 20px;
+    position:relative;
+    z-index:0;
+    
+}
+.card:hover
+{
+   box-shadow: 1px 2px 10px 5px gray;
+}
+.cardp1
+{
+  grid-column-start:CR1C1;
+  grid-column-end:CR1C1;
+  grid-row-start:CR1C1;
+  
+}
+
+.score
+{
+  grid-column-start:CR2C3;
+  grid-column-end:CR2C3;
+  grid-row-start:CR2C3;
+  color: #ffffff;
+  padding-left: 60px;
+}
+.points
+{
+  grid-column-start:CR3C1;
+  grid-column-end:CR3C1;
+  grid-row-start:CR3C1;
+  color:#ffffff;
+ 
+ 
+}
+.completion
+{
+  grid-column-start:CR3C2;
+  grid-column-end:CR3C2;
+  grid-row-start:CR3C2;
+  width:100%;
+  height: 20px;
+  margin-top:20px;
+  background-color: gray;
+  padding: 3px;
+}
+
+.QuestionNo
+{
+    margin-left:12px;
+    margin-top:0px;
+}
+.secondtag
+{
+  grid-column-start:CR4C1;
+  grid-column-end:CR4C1;
+  grid-row-start:CR4C1;
+  color: #ffffff;  
+ 
+}
+.startButtonHolder
+{
+  grid-column-start:CR4C3;
+  grid-column-end:CR4C3;
+  grid-row-start:CR4C3 ;
+  padding-top: 0px;
+}
+.startButton
+{
+    background-color: gray;
+    border-style:none;
+    border-radius:30px;
+    color:white;
+    width: 80%;
+    height: 30px;
+    margin-left: 20px;
+    padding-right: 90px;
+    margin-top:0px; 
+}
+.card1stbutton
+{
+  grid-column-start:CR5C1;
+  grid-column-end:CR5C1;
+  grid-row-start:CR5C1;
+  
+}
+.button
+{
+    width: 90%;
+    border-radius: 20px;
+    border:1px solid gray;
+    background-color: black;
+    color:#ffffff;
+}
+.card2ndbutton
+{
+  grid-column-start:CR5C2;
+  grid-column-end:CR5C2;
+  grid-row-start:CR5C2;  
+}
+.card3rdbutton
+{
+  grid-column-start:CR5C3;
+  grid-column-end:CR5C3;
+  grid-row-start:CR5C3;  
+}
+.card4thbutton
+{
+  grid-column-start:CR5C4;
+  grid-column-end:CR5C4;
+  grid-row-start:CR5C4; 
+}
+.card6thbutton
+{
+  grid-column-start:CR6C1;
+  grid-column-end:CR6C1;
+  grid-row-start:CR6C1; 
+}
+.card7thbutton
+{
+  grid-column-start:CR6C3;
+  grid-column-end:CR6C3;
+  grid-row-start:CR6C3; 
+}
+.achivements_tracker
+{
+    grid-column-start:LR1C2;
+    grid-column-stop:LR1C2;
+    grid-row-start:LR1C2;
+    margin-top: 50px;
+    width:100%;
+    padding:9px;
+}
+.circle
+{
+    
+    border-radius: 30px;
+    border: 2px solid white;
+    padding: 15px;
+    background-color: #4cae4c;
+    box-shadow:0px 4px 10px 0px #cccccc;
+    margin-right: 9px;
+}
+.group
+{
+    display: inline-block;
+}
+.line
+{
+    height: 100px;
+    width: 200px;
+}
+.lineColor
+{
+    stroke:#cccccc;
+    stroke-width:2;
+}
+.checkpoint
+{
+    position: absolute;
+    margin-top: 60px;
+}
