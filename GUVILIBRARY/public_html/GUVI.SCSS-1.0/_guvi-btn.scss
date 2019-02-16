@@ -1,0 +1,186 @@
+
+/// Created on : Feb 15, 2019, 5:41:39 PM
+/// Author     : Pramod
+
+
+.guvi-btn
+{
+    background-color:$Guvi-Btn-BackGroundColor;
+    color: $Guvi-Btn-Color;
+    border-style: none;
+    width:15%;
+    height:50px;
+    border-radius:32px;    
+}
+.guvi-btn-default
+{
+    background-color:$Guvi-Btn-BackGround-Default;
+    color:$Guvi-Btn-Border_radius;
+    border: 1px solid $Guvi-Btn-Border_radius;
+    border-radius:32px;
+    width:15%;
+    height:50px;
+    margin: 2px 2px 2px 2px;
+}
+.guvi-btn-login
+{
+    background-color:$Guvi-Btn-BackGround-Login;
+    color:$Guvi-Btn-Color;
+    border-radius:32px;
+    width:15%;
+    height:50px;
+    margin: 2px 2px 2px 2px;
+}
+.guvi-btn-sm
+{
+    
+    width:30%;
+    height:50px;
+    margin: 2px 2px 2px 2px;
+}
+
+.guvi-btn-md
+{
+  
+    width:50%;
+    height:50px;
+    margin: 2px 2px 2px 2px;
+}
+.guvi-btn-lg
+{
+  
+    width:100%;
+    height:50px;
+    margin: 2px 2px 2px 2px;
+}
+
+.guvi-btn-sm:hover
+{
+    background-color:$Guvi-Btn-BackGroundColor-Hover;
+}
+.guvi-btn-default:hover
+{
+   background-color:$Guvi-Btn-BackGround-Default-Hover; 
+}
+@media (max-width:760px)
+{
+        .guvi-btn
+     {
+         background-color:$Guvi-Btn-BackGroundColor;
+         color: $Guvi-Btn-Color;
+         border-style: none;
+         width:30%;
+         height:50px;
+         border-radius:32px;    
+     }
+     .guvi-btn-sm
+     {
+         background-color:$Guvi-Btn-BackGroundColor;
+         color: $Guvi-Btn-Color;
+         border-radius:32px;
+         border-style: none;
+         width:50%;
+         height:50px;
+         margin: 2px 2px 2px 2px;
+     }
+     .guvi-btn-md
+     {
+         background-color:$Guvi-Btn-BackGroundColor;
+         color: $Guvi-Btn-Color;
+         border-radius:32px;
+         border-style: none;
+         width:100%;
+         height:50px;
+         margin: 2px 2px 2px 2px;
+     }
+     .guvi-btn-lg
+     {
+         background-color:$Guvi-Btn-BackGroundColor;
+         color: $Guvi-Btn-Color;
+         border-radius:32px;
+         border-style: none;
+         width:100%;
+         height:50px;
+         margin: 2px 2px 2px 2px;
+     }
+     .guvi-btn-default
+     {
+         background-color:$Guvi-Btn-BackGround-Default;
+         border: 1px solid $Guvi-Btn-Border_radius;
+         color:$Guvi-Btn-Border_radius;
+         border-radius:32px;
+         width:30%;
+         height:50px;
+         margin: 2px 2px 2px 2px;
+     }
+     .guvi-btn-login
+    {
+        background-color:$Guvi-Btn-BackGround-Login;
+        color:$Guvi-Btn-Color;
+        border-radius:32px;
+        width:30%;
+        height:50px;
+        margin: 2px 2px 2px 2px;
+    }
+}
+@media (max-width:360px)
+{
+        .guvi-btn
+     {
+         background-color:$Guvi-Btn-BackGroundColor;
+         color: $Guvi-Btn-Color;
+         border-style: none;
+         width:100%;
+         height:50px;
+         border-radius:32px;    
+     }
+     .guvi-btn-sm
+     {
+         background-color:$Guvi-Btn-BackGroundColor;
+         color: $Guvi-Btn-Color;
+         border-radius:32px;
+         border-style: none;
+         width:100%;
+         height:50px;
+         margin: 2px 2px 2px 2px;
+     }
+     .guvi-btn-md
+     {
+         background-color:$Guvi-Btn-BackGroundColor;
+         color: $Guvi-Btn-Color;
+         border-radius:32px;
+         border-style: none;
+         width:100%;
+         height:50px;
+         margin: 2px 2px 2px 2px;
+     }
+     .guvi-btn-lg
+     {
+         background-color:$Guvi-Btn-BackGroundColor;
+         color: $Guvi-Btn-Color;
+         border-radius:32px;
+         border-style: none;
+         width:100%;
+         height:50px;
+         margin: 2px 2px 2px 2px;
+     }
+     .guvi-btn-default
+     {
+         background-color:$Guvi-Btn-BackGround-Default;
+         border: 1px solid $Guvi-Btn-Border_radius;
+         color:$Guvi-Btn-Border_radius;
+         border-radius:32px;
+         width:100%;
+         height:50px;
+         margin: 2px 2px 2px 2px;
+     }
+     .guvi-btn-login
+     {
+        background-color:$Guvi-Btn-BackGround-Login;
+        color:$Guvi-Btn-Color;
+        border-radius:32px;
+        width:100%;
+        height:50px;
+        margin: 2px 2px 2px 2px;
+     }
+}

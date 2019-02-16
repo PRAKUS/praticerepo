@@ -1,0 +1,205 @@
+
+ 
+///    Created on : Feb 16, 2019, 7:15:40 AM
+///    Author     : Pramod
+
+.guvi-fotter
+{   
+    display:flex;
+    align-content: center;
+    justify-content: centre;
+    background-image: $Guvi_Footer_Background;
+    position: fixed;
+    border-radius:24px 24px 0px 0px; 
+    color:$Guvi_Footer_Color;
+    font-family: $Montserrat;
+    font-weight:$semibold;
+    width:100%;
+    bottom: 0;
+    left: 0;
+    height:320px;
+    
+}
+.guvi-fotter-tag
+{   
+    
+    label ,h1 ,p
+        {
+            display: block;
+            margin: 0px;
+            padding: 0px;
+
+        }
+    padding: 0px 10px 0px 0px;
+    font-weight: $semibold;
+    font-size: $Guvi_Footer_Font;
+    letter-spacing: 2.05px;
+    line-height: 30px;
+    margin:5% 14% 0% 4% ;
+    
+    
+}
+.guvi-list
+    {    
+        
+        li
+            { 
+                text-decoration: none;
+                font-size: $font-size-fotter-list;
+                font-weight: $normal;
+                line-height: 16px; 
+                display:block;
+                margin-top: 10px;
+                width: 100%;
+            }
+        a
+            {
+                text-decoration: none;
+                color:$Guvi_Footer_Color;
+
+
+
+            }
+        font-size: $font-size-fotter-list-header;
+        font-weight:$semibold;
+        margin: 54px 50px 0px 0px;
+       
+    }
+.guvi-location
+        {
+            display:inline-block;
+            flex:1;
+            width: 100%;
+            margin:2% 0% 0% 8%;
+            letter-spacing: 2.05px;
+        }
+ .guvi-location-icon
+        {
+            height:150px;
+            width:150px;
+            padding: 0px;
+           margin-left:10%;
+            
+        }
+.guvi-coffe-icon
+   {
+       position: absolute;
+       margin: 0px;
+   } 
+.guvi-fotter-line
+    {
+        position:absolute;
+        margin:2% 0% 0% 25% ;
+    }   
+ .guvi-fotter-line2
+    {
+        position:absolute;
+        margin:2% 0% 0% 70% ;
+        height: 250px;
+    }      
+.guvi-location-title
+        {
+            
+            font-size: $font-size-fotter-coffe;
+            letter-spacing: 2.05px;
+            margin-left:15%; 
+             
+        }
+ .guvi-location-address
+    {
+        font-size:10px;
+        letter-spacing: .05px;
+        a,p,h1,h2,h3,h4,h5,h6
+        { 
+            margin: 0px;
+            padding: 0px; 
+        }
+       
+    }
+@media(max-width:760px)
+{   
+    .guvi-fotter
+        {   
+           display:flex;
+           flex-direction:column;
+           height:360px;
+
+        }
+    .guvi-fotter-tag
+        {   
+            label ,h1 ,p
+            {
+                display: block;
+                padding:0px;
+                margin: 0px;
+            }
+                margin:4% 0% 4% 5%;
+                display:inline-block;
+        }
+    .guvi-list
+        {   
+            li
+            { 
+                display:inline;
+                margin: 10px;
+                padding:10px 10px 0px 5px;
+                 margin: 0% 0% 0% 0%;
+            }
+            display:inline-block; 
+            margin: 5% 0% 0% 9%;
+            padding:10px 30px 0px 20px;
+        }
+    .guvi-location
+        {
+            
+            position: absolute;
+            width: 100%;
+            margin:0% 0% 0% 54%;
+            letter-spacing: 2.05px;
+        }
+    .guvi-location-icon
+        {
+            height:50px;
+            width:50px;
+            padding: 0px;
+            margin: 0px;
+           margin-left:15%;
+            
+        }
+    .guvi-coffe-icon
+        {
+            position: absolute;
+            margin: 5px 0px 0px 0px;
+        } 
+    .guvi-fotter-line
+        {
+            display:none;
+        }   
+    .guvi-fotter-line2
+        {
+           display:none;
+        }      
+    .guvi-location-title
+        {
+            
+            font-size: $font-size-fotter-coffe;
+            letter-spacing:.05px;
+            margin:2% 0% 0% 8%; 
+             
+        }
+    .guvi-location-address
+        {
+            font-size:10px;
+            letter-spacing:0px;
+            margin-left:40px;
+            a,p,h1,h2,h3,h4,h5,h6
+            { 
+                margin: 0px;
+                padding: 0px;
+                display:inline-block;
+            }
+       
+        }
+    
+    
+}

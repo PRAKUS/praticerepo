@@ -1,0 +1,359 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+.guvi-btn {
+  background-color: #06E278;
+  color: #FFFFFF;
+  border-style: none;
+  width: 15%;
+  height: 50px;
+  border-radius: 32px; }
+
+.guvi-btn-default {
+  background-color: #ffffff;
+  color: #404d6f;
+  border: 1px solid #404d6f;
+  border-radius: 32px;
+  width: 15%;
+  height: 50px;
+  margin: 2px 2px 2px 2px; }
+
+.guvi-btn-login {
+  background-color: #6320ee;
+  color: #FFFFFF;
+  border-radius: 32px;
+  width: 15%;
+  height: 50px;
+  margin: 2px 2px 2px 2px; }
+
+.guvi-btn-sm {
+  width: 30%;
+  height: 50px;
+  margin: 2px 2px 2px 2px; }
+
+.guvi-btn-md {
+  width: 50%;
+  height: 50px;
+  margin: 2px 2px 2px 2px; }
+
+.guvi-btn-lg {
+  width: 100%;
+  height: 50px;
+  margin: 2px 2px 2px 2px; }
+
+.guvi-btn-sm:hover {
+  background-color: #00d16c; }
+
+.guvi-btn-default:hover {
+  background-color: #cecece; }
+
+@media (max-width: 760px) {
+  .guvi-btn {
+    background-color: #06E278;
+    color: #FFFFFF;
+    border-style: none;
+    width: 30%;
+    height: 50px;
+    border-radius: 32px; }
+
+  .guvi-btn-sm {
+    background-color: #06E278;
+    color: #FFFFFF;
+    border-radius: 32px;
+    border-style: none;
+    width: 50%;
+    height: 50px;
+    margin: 2px 2px 2px 2px; }
+
+  .guvi-btn-md {
+    background-color: #06E278;
+    color: #FFFFFF;
+    border-radius: 32px;
+    border-style: none;
+    width: 100%;
+    height: 50px;
+    margin: 2px 2px 2px 2px; }
+
+  .guvi-btn-lg {
+    background-color: #06E278;
+    color: #FFFFFF;
+    border-radius: 32px;
+    border-style: none;
+    width: 100%;
+    height: 50px;
+    margin: 2px 2px 2px 2px; }
+
+  .guvi-btn-default {
+    background-color: #ffffff;
+    border: 1px solid #404d6f;
+    color: #404d6f;
+    border-radius: 32px;
+    width: 30%;
+    height: 50px;
+    margin: 2px 2px 2px 2px; }
+
+  .guvi-btn-login {
+    background-color: #6320ee;
+    color: #FFFFFF;
+    border-radius: 32px;
+    width: 30%;
+    height: 50px;
+    margin: 2px 2px 2px 2px; } }
+@media (max-width: 360px) {
+  .guvi-btn {
+    background-color: #06E278;
+    color: #FFFFFF;
+    border-style: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 32px; }
+
+  .guvi-btn-sm {
+    background-color: #06E278;
+    color: #FFFFFF;
+    border-radius: 32px;
+    border-style: none;
+    width: 100%;
+    height: 50px;
+    margin: 2px 2px 2px 2px; }
+
+  .guvi-btn-md {
+    background-color: #06E278;
+    color: #FFFFFF;
+    border-radius: 32px;
+    border-style: none;
+    width: 100%;
+    height: 50px;
+    margin: 2px 2px 2px 2px; }
+
+  .guvi-btn-lg {
+    background-color: #06E278;
+    color: #FFFFFF;
+    border-radius: 32px;
+    border-style: none;
+    width: 100%;
+    height: 50px;
+    margin: 2px 2px 2px 2px; }
+
+  .guvi-btn-default {
+    background-color: #ffffff;
+    border: 1px solid #404d6f;
+    color: #404d6f;
+    border-radius: 32px;
+    width: 100%;
+    height: 50px;
+    margin: 2px 2px 2px 2px; }
+
+  .guvi-btn-login {
+    background-color: #6320ee;
+    color: #FFFFFF;
+    border-radius: 32px;
+    width: 100%;
+    height: 50px;
+    margin: 2px 2px 2px 2px; } }
+.guvi-fotter {
+  display: flex;
+  align-content: center;
+  justify-content: centre;
+  background-image: linear-gradient(180deg, #474747 0%, #000000 100%);
+  position: fixed;
+  border-radius: 24px 24px 0px 0px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 320px; }
+
+.guvi-fotter-tag {
+  padding: 0px 10px 0px 0px;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 2.05px;
+  line-height: 30px;
+  margin: 5% 14% 0% 4%; }
+  .guvi-fotter-tag label, .guvi-fotter-tag h1, .guvi-fotter-tag p {
+    display: block;
+    margin: 0px;
+    padding: 0px; }
+
+.guvi-list {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 54px 50px 0px 0px; }
+  .guvi-list li {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    display: block;
+    margin-top: 10px;
+    width: 100%; }
+  .guvi-list a {
+    text-decoration: none;
+    color: #ffffff; }
+
+.guvi-location {
+  display: inline-block;
+  flex: 1;
+  width: 100%;
+  margin: 2% 0% 0% 8%;
+  letter-spacing: 2.05px; }
+
+.guvi-location-icon {
+  height: 150px;
+  width: 150px;
+  padding: 0px;
+  margin-left: 10%; }
+
+.guvi-coffe-icon {
+  position: absolute;
+  margin: 0px; }
+
+.guvi-fotter-line {
+  position: absolute;
+  margin: 2% 0% 0% 25%; }
+
+.guvi-fotter-line2 {
+  position: absolute;
+  margin: 2% 0% 0% 70%;
+  height: 250px; }
+
+.guvi-location-title {
+  font-size: 18px;
+  letter-spacing: 2.05px;
+  margin-left: 15%; }
+
+.guvi-location-address {
+  font-size: 10px;
+  letter-spacing: .05px; }
+  .guvi-location-address a, .guvi-location-address p, .guvi-location-address h1, .guvi-location-address h2, .guvi-location-address h3, .guvi-location-address h4, .guvi-location-address h5, .guvi-location-address h6 {
+    margin: 0px;
+    padding: 0px; }
+
+@media (max-width: 760px) {
+  .guvi-fotter {
+    display: flex;
+    flex-direction: column;
+    height: 360px; }
+
+  .guvi-fotter-tag {
+    margin: 4% 0% 4% 5%;
+    display: inline-block; }
+    .guvi-fotter-tag label, .guvi-fotter-tag h1, .guvi-fotter-tag p {
+      display: block;
+      padding: 0px;
+      margin: 0px; }
+
+  .guvi-list {
+    display: inline-block;
+    margin: 5% 0% 0% 9%;
+    padding: 10px 30px 0px 20px; }
+    .guvi-list li {
+      display: inline;
+      margin: 10px;
+      padding: 10px 10px 0px 5px;
+      margin: 0% 0% 0% 0%; }
+
+  .guvi-location {
+    position: absolute;
+    width: 100%;
+    margin: 0% 0% 0% 54%;
+    letter-spacing: 2.05px; }
+
+  .guvi-location-icon {
+    height: 50px;
+    width: 50px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 15%; }
+
+  .guvi-coffe-icon {
+    position: absolute;
+    margin: 5px 0px 0px 0px; }
+
+  .guvi-fotter-line {
+    display: none; }
+
+  .guvi-fotter-line2 {
+    display: none; }
+
+  .guvi-location-title {
+    font-size: 18px;
+    letter-spacing: .05px;
+    margin: 2% 0% 0% 8%; }
+
+  .guvi-location-address {
+    font-size: 10px;
+    letter-spacing: 0px;
+    margin-left: 40px; }
+    .guvi-location-address a, .guvi-location-address p, .guvi-location-address h1, .guvi-location-address h2, .guvi-location-address h3, .guvi-location-address h4, .guvi-location-address h5, .guvi-location-address h6 {
+      margin: 0px;
+      padding: 0px;
+      display: inline-block; } }
+.brand-ico {
+  position: absolute;
+  padding-top: 2px;
+  margin-top: 2px !important;
+  height: 50px;
+  width: 75px; }
+
+.nav_img {
+  width: 0px;
+  height: 35px;
+  border: 1px solid #e5efec;
+  margin-top: 9px; }
+
+.navbar {
+  background-color: #ffffff !important;
+  box-shadow: 0 6px 16px rgba(105, 0, 243, 0.1); }
+
+.head-title-ex {
+  color: #6320ee !important;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px;
+  letter-spacing: 0.26px; }
+
+.head-title {
+  font-weight: 500 !important; }
+
+.dropbtn {
+  background-color: #ffffff;
+  color: #777;
+  padding: 16px;
+  font-size: 16px;
+  border: none; }
+
+.dropdown {
+  position: relative;
+  display: inline-block; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  z-index: 1; }
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; }
+
+.dropdown-content a:hover {
+  color: black; }
+
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+.dropdown:hover .dropbtn {
+  color: black; }
+
+/*# sourceMappingURL=GUVI.SCSS-1.0.css.map */
