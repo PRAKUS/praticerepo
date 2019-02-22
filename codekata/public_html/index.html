@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/codekata.css" type="text/css" rel="stylesheet">
+        <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <link href="theme/dracula.css" rel="stylesheet" type="text/css">
+        <link href="theme/night.css" rel="stylesheet" type="text/css">
+        <link href="theme/eclipse.css" rel="stylesheet" type="text/css">
+        <link href="lib/codemirror.css" rel="stylesheet" type="text/css">
+        <script src="lib/codemirror.js" type="text/javascript"></script>
+        <script src="mode/javascript/javascript.js"></script>
+        <script src="mode/python/python.js"></script>
+        <script src="mode/cmake/cmake.js"></script>
+        <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="codekata.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <!-----------------------------navigation bar--------------------------------------->
+        <nav class="navbar navbar-default ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+
+                    <a class="navbar-brand" ><img src="" alt="image"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul  class="nav navbar-nav navbar-right"  >
+                        <li><a href="#">learn</a></li>
+                        <li><a href="#">Practice</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Leaderboard</a></li>
+                        <li><a href="#">More</a></li>
+                        <li><a href="#">Refer & Earn</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>    
+            </div>
+        </nav>
+        <!-------------------------navigation bar end here------------------------------------->
+
+        <!-- ---------------------code kata main body start--------------------------------  -->
+
+        <div class="row codekata-main">
+            <div class="col-sm-6" style="height:100%;">
+
+                <!-- -----------------------link slide start----------------------------------- -->
+                <div class="row" style="height:100%">
+                    <div class="col-sm-12" style=" height:90%;">
+                        <div class="row" style="height:100%;">
+                            <div id="slider" class=" col-lg-2 col-md-2 col-sm-2 link-side">
+                                <div  class="row">
+                                    <div class="col-sm-12" >
+                                        <button class=" slider"><span class="glyphicon glyphicon-arrow-left"></span><span>Newbie</span></button>
+                                    </div>
+                                    <div class="col-sm-12 profile-holder" >
+                                        <img class="profile" src="image/profilepic.svg">
+                                        <p class="text">Rank:<span>1,293</span></p>
+                                        <p class="text">Points:<span></span>15,26,261</p>
+                                    </div>
+                                    <div class="col-sm-12 iconholder" >
+                                        <a href="#" id="github"  class="icon"> 
+                                            <img  src="image/github.svg">
+                                            <p>Github</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-12 iconholder" > 
+                                        <a href="#" id="peertopeer" class="icon">
+                                            <img src="image/code.svg">
+                                            <p>peer's code</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-12 iconholder">
+                                        <a href="#" id="LeaderBoard" class="icon"> 
+                                            <img src="image/crown.svg">
+                                            <p>Leaderboard</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-12 iconholder">
+                                        <a href="#" id="Comment" class="icon"> 
+                                            <img src="image/Path_1328.svg">
+                                            <p>Comments</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-12 iconholder">
+                                        <a href="#" id="BookMark" class="icon"> 
+                                            <img src="image/bookmark.svg">
+                                            <p>Bookmarks</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ----------------------------link slide ends----------------------------------- -->
+
+                            <!-- ----------------------------question slide starts----------------------------------- -->
+                            <div class="col-lg-10 col-md-10 col-sm-10  question-side ">
+
+                                <div class="row question-side">
+                                    <div class="col-sm-12 question-header" >
+                                        <div class="col-sm-1 center" style="height:100%;">
+                                            <span id="question-list"> <img  class="inline-group" src="image/question.svg"></span>
+
+                                        </div>        
+                                        <div class="col-sm-11    question-right " >
+                                            <h2  class="inline text-capitalize" >Q1</h2>
+                                            <p id="pagename" class="inline text-capitalize">  </p>
+                                            <ul  class="inline"  >
+                                                <li class="inline"><a href="#"><img src="image/share.svg"></a></li>
+                                                <li  class="inline"><a href="#">Share</a></li>
+                                                <li  class="inline"><a href="#"><img src="image/bookmark.svg"></a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- *****************************************question********************************************************************************** -->
+                                    <div id="question_tab" class="col-sm-12 question-holder">
+                                        <label id="question">Write a function that returns the sum of two numbers.</label>
+                                        <div>
+                                            <p>Example</p>
+                                            <p>For param1 = 1 and param2 = 2, the output should be
+                                                add(param1, param2) = 3.</p>
+                                        </div>
+
+                                        <div>
+                                            <p>Input/Output</p>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                [execution time limit] 4 seconds (js)
+                                                [input] integer param1
+                                                Guaranteed constraints:
+                                                -1000 ≤ param1 ≤ 1000.
+                                                [input] integer param2
+                                                Guaranteed constraints:
+                                                -1000 ≤ param2 ≤ 1000.
+                                                [output] integer
+                                                The sum of the two inputs.
+                                                [JavaScript (ES6)] Syntax Tips
+                                                // Prints help message to the console
+                                                // Returns a string
+                                                function helloWorld(name) {
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- ************************************S******************************GITHUB********************************************************** -->
+                                    <div id="Git_Hub" class="col-sm-12 git" >
+                                        <div class="row" style="height: 100%;">
+                                            <div class="col-sm-12 " style="height:10%;">
+                                                <a> 
+                                                    <img src="image/vedio.svg" >
+                                                    <label class="knowing_github">What is GitHub</label>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-12" style="height:10%;">
+
+                                                <Select class="git-selector">Langauge Used
+                                                    <option>Python</option>
+                                                    <option>C++</option>
+                                                    <option>c#</option>
+                                                    <option>JavaScript</option>
+                                                    <option>C</option>
+                                                    <option>HTML</option>
+                                                </select>
+
+                                            </div>
+                                            <div class="col-sm-12" style="height:10%;">
+                                                <input type="text" class="git-input" placeholder="Your GitHub Url">
+                                            </div>
+                                            <div class="col-sm-12 git-textarea-container">
+                                                <div class="row" style="height: 100%;">
+                                                    <div class="col-sm-6" style="height:100%;">
+                                                        <p>Positive Testcase<span></span></p>
+                                                        <textarea class="git-text-area"></textarea>
+                                                    </div>
+                                                    <div class="col-sm-6 " style="height:100%;">
+                                                        <p class="text-right">Negative Testcase<span></span></p>
+                                                        <textarea class="git-text-area"></textarea>
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                            <div class="col-sm-12 " style="height:10%;">
+                                                <input type="checkbox"  class="inline-group git-checkbox">
+                                                <p class="inline-group">I agree this is my code</p>
+                                                <input type="submit" class=" inline-group git-submit" value="Submit">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- *************************************************************peer to peer********************************************************** -->
+                                    <div id="peer_to_peer" class="col-sm-12 leaderboard-container display" >
+                                        <div style="height:100%;">
+                                            <div class="col-sm-12 question-container" style="height:10%;">
+                                                <div class="col-sm-12 ">
+                                                    <h4>Q1.</h4>
+                                                    <p>Write a function that returns the sum of two numbers.</p>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12" style="height:90%;">
+                                                <div  style=" height: 11%">    
+                                                    <div class="col-sm-2" style=" height: 100% ;">
+                                                        <img class="profile" alt="image" src="image/profilepic.svg">
+                                                    </div>
+                                                    <div class="col-sm-10 border-bottom" style="height: 100% ;">
+                                                        <div class="score-container">
+                                                            <label class="inline-group">YOUR NAME</label>
+                                                            <h6 class="inline-group">SCORE:</h6><p class="inline-group">123456</p><br>
+                                                            <div class="inline">  
+                                                                <a href="#" class="inline">https://github.com/</a>
+                                                                <button type="button" class="profile-button navbar-right"><span class="glyphicon glyphicon-thumbs-up"></span>View Profile</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- **************************************************************ledearboard********************************************************** -->
+                                    <div id="leader_board" class="col-sm-12 leaderboard-container display" >
+                                        <div class="row record-maker" style="height: 100%;">
+                                            <div class="col-sm-12" style="height: 30%;">
+                                                <div class="col-sm-4 align-dowm" style="height: 100%;">
+                                                    <div>2</div>
+                                                    <div class="container-profile">
+                                                        <img src="image/profilepic.svg"><br>
+                                                        <label>Name</label>
+                                                        <p>Score:<span>189191</span></p>
+                                                    </div>  
+                                                </div>
+                                               
+                                                <div class="col-sm-4 align-center" style="height: 100%;">
+                                                         <img class="crown" src="image/leaderCrown.svg">
+                                                    <div class="container-profile ">
+                                                        <img src="image/profilepic.svg"><br>
+                                                        <label>Name</label>
+                                                        <p>Score:<span>189191</span></p>
+                                                    </div>  
+                                                </div>
+                                                <div class="col-sm-4 align-dowm" style="height: 100%;">
+                                                    <div>2</div>
+                                                    <div class="container-profile ">
+                                                        <img src="image/profilepic.svg"><br>
+                                                        <label>Name</label>
+                                                        <p>Score:<span>189191</span></p>
+                                                    </div>  
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12" style="height:70%;">
+                                                <div  style=" height: 15%">    
+                                                    <div class="col-sm-2" style=" height: 100%">
+                                                        <img class="profile" alt="image" src="image/profilepic.svg">
+                                                    </div>
+                                                    <div class="col-sm-10 border-bottom" style="height: 100%">
+                                                        <div class="score-container">
+                                                            <label class="inline-group">YOUR NAME</label>
+                                                            <h6 class="inline-group">SCORE:</h6><p class="inline-group">123456</p><br>
+                                                            <div class="inline">  
+                                                                <a href="#" class="inline">https://github.com/</a>
+                                                                <button class="profile-button navbar-right">View Profile</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div  style=" height: 15%">    
+                                                    <div class="col-sm-2" style=" height: 100%">
+                                                        <img class="profile" alt="image" src="image/profilepic.svg">
+                                                    </div>
+                                                    <div class="col-sm-10 border-bottom" style="height: 100%">
+                                                        <div class="score-container">
+                                                            <label class="inline-group">YOUR NAME</label>
+                                                            <h6 class="inline-group">SCORE:</h6><p class="inline-group">123456</p><br>
+                                                            <div class="inline">  
+                                                                <a href="#" class="inline">https://github.com/</a>
+                                                                <button class="profile-button navbar-right">View Profile</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div style=" height: 15%">    
+                                                    <div class="col-sm-2" style=" height: 100%">
+                                                        <img class="profile" alt="image" src="image/profilepic.svg">
+                                                    </div>
+                                                    <div class="col-sm-10 border-bottom" style="height: 100%">
+                                                        <div class="score-container">
+                                                            <label class="inline-group">YOUR NAME</label>
+                                                            <h6 class="inline-group">SCORE:</h6><p class="inline-group">123456</p><br>
+                                                            <div class="inline">  
+                                                                <a href="#" class="inline">https://github.czxzxzxzxzxzxzxzxzxzxom/</a>
+                                                                <button class="profile-button navbar-right">View Profile</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+ <!-- ******************************************************************Comments********************************************************** -->
+                                    <div id="commenttab" class="col-sm-12 comment-container display" >
+                                        <div class="row" style="height:100%;">
+                                            <div class="col-sm-12 question-container" style="height:10%;">
+                                                <div class="col-sm-12 ">
+                                                    <h4>Q1.</h4>
+                                                    <p>Write a function that returns the sum of two numbers.</p>
+                                                    <span class="glyphicon glyphicon-ok">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-12 border-bottom" style="height:25%;">
+                                                <div class="col-sm-12" style="height:100%;" >
+                                                    <textarea class="comment-box"></textarea>
+                                                    <input type="submit" class="git-submit navbar-right" value="submit">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12" style="height:60%;">
+                                                <div class="row"  style=" height: 15%">
+                                                    <div class="col-sm-2" style=" height: 100%">
+                                                        <img class="profile" alt="image" src="image/profilepic.svg">
+                                                    </div>
+                                                    <div class="col-12-10 inline-group" style="height: 100%">
+                                                        <div class="peerComment"> 
+                                                            <p>WOW nice logic</p>
+                                                            <div class="inline-group">
+                                                                <p class="inline-group">Name</p>
+                                                                <p class="inline-group">! Week Ago</p>
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row"  style=" height: 15%">
+                                                    <div class="col-sm-2" style=" height: 100%">
+                                                        <img class="profile" alt="image" src="image/profilepic.svg">
+                                                    </div>
+                                                    <div class="col-12-10 inline-group" style="height: 100%">
+                                                        <div class="peerComment"> 
+                                                            <p>WOW nice logic</p>
+                                                            <div class="inline-group">
+                                                                <p class="inline-group">Name</p>
+                                                                <p class="inline-group">! Week Ago</p>
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row"  style=" height: 15%">
+                                                    <div class="col-sm-2" style=" height: 100%">
+                                                        <img class="profile" alt="image" src="image/profilepic.svg">
+                                                    </div>
+                                                    <div class="col-12-10 inline-group" style="height: 100%">
+                                                        <div class="peerComment"> 
+                                                            <p>WOW nice logic</p>
+                                                            <div class="inline-group">
+                                                                <p class="inline-group">Name</p>
+                                                                <p class="inline-group">! Week Ago</p>
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div> 
+ <!-- ******************************************************************Bookmarks********************************************************** -->
+                                    <div id="bookmarktab" class="col-sm-12 bookmar-container">
+                                        <h4>Newbie</h4>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="row">
+                                                        <div class="col-sm-3"><button class="set-btn">SET1-Q</button></div>
+                                                        <div class="col-sm-3"><button class="set-btn">SET1-Q2</button></div>
+                                                        <div class="col-sm-3"><button class="set-btn">SET1-Q3</button></div>
+                                                    </div>    
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <div class="row">
+                                                        <div class="col-sm-3"><button class="set-btn">SET1-Q4</button></div>
+                                                        <div class="col-sm-3"><button class="set-btn">SET1-Q5</button></div>
+                                                        <div class="col-sm-3"><button class="set-btn">SET1-Q6</button></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <div class="row">
+                                                        <div class="col-sm-3"><button class="set-btn">SET1-Q7</button></div>
+                                                        <div class="col-sm-3"><button class="set-btn">SET1-Q8</button></div>
+                                                        <div class="col-sm-3"><button class="set-btn">SET1-Q9</button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                
+                                
+                                
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- ----------------------------------------------question slide ends------------------------------------------------------------------ -->				
+                    <!-- *****************************************************buttom tag area****************************************************** -->
+                    <div class="col-sm-12 bottom-bar" style=" height:10%;">
+                        <img src="image/tag.svg">
+                        <button class="tag-button inline">Variables</button>
+                        <button class="tag-button inline">Strings</button>
+                        <button class="tag-button inline">Loopings</button>
+                        <button class="tag-button inline">Maths</button>
+                        <button class="tag-button inline">Character</button>
+                        <button class="next-button glyphicon glyphicon-arrow-left"></button>
+                        <span>NEXT</span>
+                        <button class="next-button glyphicon glyphicon-arrow-right"></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ---------------------------------------------- text editor starts------------------------------------------------------------------ -->
+            <div class="col-lg-6 col-md-6 col-sm-6 texteditor-side ">
+                <div class="col-sm-12 texteditor-nav" >
+                    <span class="navbar-brand highlight">Test_code.py</span>
+                    <div class="code-and-theme-selector">
+                        <select id="langauge_selector" class="selector inline-group" >
+                            <option >python</option>
+                            <option >java</option>
+                            <option >c++</option>
+                            <option >HTML</option>
+                            <option >javascript</option>
+                            <option >C</option>
+                            <option >C#</option>
+                        </select> 
+                        <select id="theme_selector"  class="selector inline-group">
+                            <option>dracula</option>
+                            <option>night</option>
+                            <option>eclipse</option>
+
+                        </select> 
+                        <button class="glyphicon glyphicon-fullscreen inline-group fullscreen-btn"></button> 
+                    </div>
+                </div>
+                <div id="texteditor" class="col-sm-12" style=" height:65%;">
+                    <textarea id="ide" style="width: 100%;"></textarea>
+                </div>
+                <div class="col-sm-12 texteditor-nav ">
+                    <ul class="toggler inline-group">
+                        <li class="active inline-group"><a id="Testcase" data-toggle="tab" href="#testcase" style="border-bottom:3px solid #20fc8f;margin-top:30px; ">Testcase</a></li>
+                        <li class="inline-group"><a id="Console" data-toggle="tab" href="#console"  style="border-bottom:3px solid #353535;">Console</a></li>
+                    </ul>
+                    <button id="pull-down-button" class="inline-group pull-down-button"><span id="pulldown-icon" class="glyphicon glyphicon-chevron-down"></span></button>
+                    <button id="pull-up-button" class="inline-group pull-up-button"><span id="pullup-icon" class="glyphicon glyphicon-chevron-up"></span></button>
+                    <button class="btn run-button"> Run</button>
+                </div>
+                <div id="testcase-tab" class="col-sm-12 tab-content testcase-tab" >
+                    <div id="testcase" class="tab-pane fade in active">
+                        <div class="dropup">
+                            <button class="btn-testcase" type="button" data-toggle="dropdown"> <span class="caret"></span>Testcase 1</button>
+                            <ul class="dropdown-menu testcase" >
+                                <li ><p >For param=1 and param2=2,the output shoulddbe add(param1,param2)=3.</p></li>
+                            </ul>
+                        </div> 
+                        <div class="dropup">
+                            <button class="btn-testcase" type="button" data-toggle="dropdown"><span class="caret"></span>Testcase 2</button>
+                            <ul class="dropdown-menu">
+                                <li ><p >For param=1 and param2=2,the output shoulddbe add(param1,param2)=3.</p></li>                                    </ul>
+                        </div>
+                        <div class="dropup">
+                            <button class="btn-testcase" type="button" data-toggle="dropdown"><span class="caret"></span>Testcase 3</button>
+                            <ul class="dropdown-menu">
+                                <li ><p >For param=1 and param2=2,the output shoulddbe add(param1,param2)=3.</p></li>
+                            </ul>
+                        </div>
+                        <div class="dropup">
+                            <button class="btn-testcase" type="button" data-toggle="dropdown"><span class="caret"></span>Testcase 4</button>
+                            <ul class=" dropdown-menu">
+                                <li ><p >For param=1 and param2=2,the output shoulddbe add(param1,param2)=3.</p></li>
+                            </ul>
+                        </div>    
+                    </div>
+                    <div id="console"  class="tab-pane active">
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- ---------------------------- text editor ends----------------------------------- -->
+        </div>
+
+        <!-- ---------------------code kata main body finish--------------------------------  -->
+    </body>
+</html>

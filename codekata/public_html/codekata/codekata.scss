@@ -1,0 +1,606 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 17, 2019, 9:02:00 PM
+    Author     : Pramod
+*/
+$codekata-font-primarycolor:#ffffff;
+$codekata-line-primarycolor:#707070;
+$codekata-font-secondarycolor:#06E278;
+$codekata-linkSide-bgcolor:#353535;
+$codekata-questionSide-bgcolor:#1E1F24;
+$codekata-texteditorSide-bgcolor:#1E1F24;
+$codekata-ide-navbar:#353535;
+$codekata-programname-bg:#1d1d1d;
+$codekata-run-button-color:#6618aa;
+$tag-button-color: #312c35;
+$tag-font-color: #a1a4ad;
+body
+{
+    font-family: Montserrat;
+    font-size: 18px;
+    letter-spacing:1px;
+    color:$codekata-font-primarycolor;
+}
+.align-right
+{
+    padding-left:5%;
+}
+.display
+{
+    display:none;
+}
+.inline
+{
+    display:inline;
+}
+.center{padding:2% 0% 0% 0%;  }
+.codekata-main
+    {
+        height: 900px;
+        width: 100%;
+        padding: 0px 0px 0px 0px !important;
+        margin: 0px !important;
+       
+    }
+.navbar-default
+{
+    margin:0px !important;
+}
+.inline-group
+            {
+                display:inline-block; 
+                
+            }
+ 
+/// .............................link slide.....................................
+    .link-side
+        {
+          
+            height:100%;
+            background-color:$codekata-linkSide-bgcolor;
+            padding: 0px 0px 0px 0px;
+              
+        }
+    ///............................button.........................
+        .slider
+        {
+           width:100%; 
+           height: 60px;
+           background-color: $codekata-linkSide-bgcolor;
+           color:$codekata-font-primarycolor;
+           border-style:none; 
+           padding: 0px 0px 20px 0px;
+           span
+           {
+               margin: 0px 10px 0px 0px;
+           }
+
+        }
+        ///............................profile.........................
+        .profile-holder
+        {
+          
+            border-bottom: 1px solid $codekata-line-primarycolor;
+            padding: 0px 0px 0px 0px;
+            
+
+        }
+
+        .profile
+        {  
+            height: 50px;
+            width: 50px;
+            color:$codekata-font-secondarycolor;
+            border-radius: 20px;
+            margin:14% 0% 5% 25%;
+        }
+        .text
+        {   
+           color: $codekata-font-secondarycolor;
+           font-size:10px;
+           margin:0px 0px 0px 10px;
+        }
+        
+        
+        ///............................github.........................
+        .iconholder
+        {
+            
+            color:$codekata-font-primarycolor;
+            border-bottom: 1px solid $codekata-line-primarycolor;
+            margin: 20px 0px 20px 0px;
+           
+        }
+        .icon
+        {
+          
+          height: 40px;
+          width:40px;
+          margin-bottom:25px;
+          img
+          {
+              margin:0% 0% 2% 26%;  
+          }
+          p
+          {
+              padding-left: 10px;
+              text-decoration: none;
+              color:$codekata-font-primarycolor;
+          }
+           
+        }
+        
+/// .............................link slide end.....................................
+        
+/// .............................question slide start.....................................    
+
+.question-side
+    {
+        height:100%;
+        background-color:$codekata-questionSide-bgcolor;
+        border-right:2px solid $codekata-line-primarycolor;
+        padding:0% 0% 0% 2%; 
+    }
+            .question-header
+            {
+               // padding: 30px 2px 2px 2px;
+               height: 7%;
+
+
+            } 
+                    .question-right
+                    {   height: 100%;
+                        border-bottom:1px solid #707070;
+                        padding-top:2%;
+                        color:$codekata-font-primarycolor;
+                        font-family: Montserrat;
+                        p{
+                            
+                           
+                            font-weight: 600px;
+                            font-size: 20px;
+                            padding-left: 20%;
+                            position: absolute;
+                            letter-spacing: 2.88px;
+                        }
+                        ul{
+                        padding: 0% 0% 0% 63% ;
+                        
+                      
+                        }
+                         li
+                        {
+                            margin:0px 0px 0px 15px;
+                        }
+                        
+                    }
+            
+                    .question-holder
+                    {
+                        height: 95%;
+                        overflow-y: scroll;
+                        padding: 0px!important;
+                        color:$codekata-font-primarycolor;
+                        
+                    }
+                    .question-holder::-webkit-scrollbar
+                        {
+                            display: none;
+                        }
+                     @-moz-document url-prefix() {
+                .question-holder{overflow: hidden !important;}}
+  /// *********************************github*************************************
+        ///this class is use in git hub page at the top in place of what is github?
+       .git
+       {
+           font-family: Montserrat;
+           letter-spacing: 1.92px;
+           font-weight: 500px;
+           height: 95%; display: none;
+       }
+        
+        
+        .knowing_github
+        {
+            margin: 5% 0% 0% 5%;
+            
+        }
+        //this class is used in gitinput
+        .git-input
+        {
+            width:100%;
+            color:$codekata-line-primarycolor;
+            background-color: $codekata-linkSide-bgcolor;
+            border-style: none;
+            margin-top:2%;
+            height:60%;
+            padding-left:3%;
+            letter-spacing: 1.92px;
+           font-weight: 500px;
+            
+        }
+        .git-selector
+        {
+            width:50%;
+            color:$codekata-line-primarycolor;
+            background-color: $codekata-linkSide-bgcolor;
+            border-style: none;
+            margin-top:2%;
+            height:60%;
+            padding-left:3%;
+            letter-spacing: 1.92px;
+           font-weight: 500px;
+        }
+        .git-textarea-container
+        {
+            height:40%;
+            color:$codekata-line-primarycolor;
+        }
+        .git-text-area
+        {
+            width: 100%;
+            height: 70%;
+            color:$codekata-line-primarycolor;
+            background-color: $codekata-linkSide-bgcolor;
+            border-style: none;
+            text-decoration: none;
+        }
+        .git-checkbox
+        {
+            
+            width:20px;
+            height:20px;
+        }
+        .git-checkbox:checked
+        {
+            background-color:$codekata-linkSide-bgcolor!important;
+            color: $codekata-font-secondarycolor;
+        }
+        .git-submit
+        {
+            background-color:$codekata-linkSide-bgcolor;
+            color:$codekata-font-secondarycolor;
+            border-style:none;
+            border-radius: 20px;
+            width:20%;
+            margin-left: 50%;
+            height:60px;
+            
+        }
+        
+ /// *********************************peer to peer WEB*************************************
+         .like-button
+         {
+             width:22%;
+             height:5%;
+             margin: 0% 0% 0% 52%;
+             border-radius: 10px;
+             border:1px solid $codekata-line-primarycolor;
+             background-color:$codekata-linkSide-bgcolor;
+             padding:0%!important;
+             
+             span
+             {
+                 margin-left: 0px;
+                 padding-right:20px;
+             }
+         }
+         ///this class is for question part
+        .question-container
+        {   border-bottom: 1px solid  $codekata-line-primarycolor;
+            margin:3% 0% 3% 0%;
+            padding-bottom:2%;
+            height:7%;
+            color:$codekata-font-primarycolor;
+            
+            h4
+            {
+                display: inline-block;
+                margin-left:3%; 
+            }
+            p
+            {
+                display: inline-block;
+                margin-left: 11%;
+            }
+        }
+         
+         
+ /// *********************************peer to peer WEB END*********************************
+
+                            
+/// .............................texteditor slide.....................................      
+.texteditor-side ///its column for whole text editor
+    {
+        padding: 0px!important;
+        height: 100%;
+        background-color: $codekata-texteditorSide-bgcolor;
+        
+    }
+ .texteditor-nav  /// its background for navbar above the texteditor and down the texteditor 
+    {
+        background-color:$codekata-ide-navbar;
+        height:5%;
+        padding: 0px 0px 0px 0px!important;
+    }
+    
+    .selector ///selector for theme and code
+    {
+        background-color:$codekata-ide-navbar;
+        color:$codekata-font-primarycolor;
+        border-style:none;
+       
+    }
+
+.highlight
+{
+    background-color: $codekata-programname-bg;
+    color:$codekata-font-primarycolor;
+    
+}
+.code-and-theme-selector
+{
+    margin-left:70%; 
+    padding: 15px;
+}
+.fullscreen-btn
+{
+    background-color:$codekata-linkSide-bgcolor;
+    color:$codekata-font-primarycolor;
+    border-style:none;
+}
+.toggler  ///used for toggling between testcase and console in codekataide
+{
+    padding: 5px 0px 0px 10px;
+    li
+    {
+        margin:10px;
+        
+     a
+     {
+        text-decoration: none;
+        color: $codekata-font-primarycolor;
+        letter-spacing: 2.05px;
+     }
+    }
+}
+
+///this code of block is for hiding console and testcase and showing full text editor;
+.pull-down-button
+{
+    background-color:$codekata-programname-bg;
+    padding: 0px;
+    border-style:none;
+    color:$codekata-font-secondarycolor;
+    width:90px;
+    border-bottom-left-radius:20px; 
+    border-bottom-right-radius:20px; 
+    position: absolute;
+    margin-left: 20%;
+}
+.pull-up-button
+{
+    background-color:$codekata-programname-bg;
+    padding: 0px;
+    border-style:none;
+    color:$codekata-font-secondarycolor;
+    width:90px;
+    border-top-left-radius:20px; 
+    border-top-right-radius:20px; 
+    position: absolute;
+    margin:2.5% 0% 0% 20%;
+    display: none;
+}
+///this block of code for test case selection  
+.btn-testcase
+{
+    background-color:$codekata-questionSide-bgcolor;
+    width: 40%;
+    height:40px;
+    margin:15px 0px 0px 0px;
+    color:$codekata-font-primarycolor;
+    text-align: left;
+    border:1px solid $codekata-linkSide-bgcolor;
+    border-radius:7px;
+    padding-right: 5px;
+   
+}
+.testcase-tab
+{   ///$codekata-questionSide-bgcolor
+     background-color:$codekata-questionSide-bgcolor;
+    
+}
+
+///this code of block is for testcase pop-up 
+.testcase
+{   
+      
+        width:20%;
+        padding:200px;
+        li
+        {
+            padding:20px; 
+            background-color: $codekata-questionSide-bgcolor;
+        }
+    p
+    {
+        //$codekata-questionSide-bgcolor
+        background-color: red;
+        color:$codekata-font-primarycolor;
+        height: 100%;
+        width:100%;
+        padding-left:5%;
+    }
+}
+
+.run-button
+{
+   background-color: $codekata-run-button-color;
+   color:$codekata-font-primarycolor;
+   position: absolute;
+   margin:1% 0% 0% 65%;
+   width: 10%;
+}
+
+/// #####################################leaderboard############################
+.leaderboard-container
+{
+    height:95%;
+    display: none;
+}
+///this class is use for showing top 3 programmer 
+.record-maker
+{   padding-top:6%; 
+    border-bottom:2px solid $codekata-linkSide-bgcolor;
+    height: 30%;
+}
+///this class is use for aligning 2nd and 3rd position 
+.align-dowm
+{
+    padding-top:9%;
+    padding-left: 10%!important;
+}
+///this class is use for aligning 2st position 
+
+.align-center
+{
+    padding-left: 10%!important;
+    //margin-top: 6%;
+}
+///this class work as container for profile in leaderboard
+.container-profile
+{   
+    color:$codekata-font-primarycolor;
+ 
+    img
+    {
+        width:80px;
+        height:80px;
+        border-radius: 45px;
+    }
+    label
+    {
+        margin-left:10%!important;
+        font-weight:300px;
+        
+    }
+    p 
+    {
+        color:$codekata-font-secondarycolor;
+
+    }
+    
+}
+.crown
+{
+
+    width: 69px;
+}
+.profile-button
+{
+   background-color: $codekata-linkSide-bgcolor;
+   width:20%;
+   height: 40px;
+   color:$codekata-font-primarycolor;
+   border-style: none;
+   border-radius: 20px;
+   display: inline;
+   margin-left:5%;
+}
+.score-container
+{
+    color:$codekata-font-primarycolor; 
+    display: inline;
+    h6{margin-left:10%;}
+        
+    
+}
+///************************************comment*************************
+.comment-container
+{
+  height: 94%;
+  color:$codekata-font-primarycolor;
+  font-family: Montserrat;
+}
+.comment
+{
+    width: 80%;
+    height:60%;
+}
+.comment-box
+{
+  height: 50%;
+    width:100%;
+    margin:0%;
+    background-color:$codekata-linkSide-bgcolor;
+    border-radius: 0 16px 16px 26px;
+    
+}
+.peerComment
+{
+    padding-top:10%;
+}
+///************************************bottom-bar*************************
+.bottom-bar
+{   
+    
+    color:$codekata-font-primarycolor;
+    width: 60%;
+    background-color: $codekata-programname-bg;
+    border-top: 2px solid $codekata-line-primarycolor;
+     border-right: 4px solid $codekata-line-primarycolor;
+     padding-top:2%;
+     
+}
+.tag-button
+{
+    background-color:$tag-button-color;
+    color:$tag-font-color;
+    border-radius: 20px;
+    border-style: none;
+    height:21px;
+    width:10%;
+    font-family:Montserrat;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    margin:2%;
+}
+.next-button
+{
+    
+    background-color:$codekata-programname-bg;
+    color:$tag-font-color;
+    border-bottom-left-radius: 20px;
+    border-style: none;
+    height:21px;
+    width:5%;
+    font-family:Montserrat;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    margin:1%;
+}
+.set-btn
+{
+    width:100%;
+    height: 30px;
+    border:1px solid $codekata-line-primarycolor;
+    border-radius: 20px;
+    margin: 5% 0% 5% 40%;;
+    font-family:Montserrat; 
+    background-color: $codekata-questionSide-bgcolor;
+    color:$codekata-font-primarycolor;
+    
+}
+.bookmar-container
+{
+    padding-left: 14%;
+    color:$codekata-font-primarycolor;
+    h4
+    {
+        margin-left: 10%;
+    }
+}

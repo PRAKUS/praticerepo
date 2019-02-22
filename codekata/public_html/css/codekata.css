@@ -1,0 +1,419 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 17, 2019, 9:02:00 PM
+    Author     : Pramod
+*/
+body {
+  font-family: Montserrat;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #ffffff; }
+
+.align-right {
+  padding-left: 5%; }
+
+.display {
+  display: none; }
+
+.inline {
+  display: inline; }
+
+.center {
+  padding: 2% 0% 0% 0%; }
+
+.codekata-main {
+  height: 900px;
+  width: 100%;
+  padding: 0px 0px 0px 0px !important;
+  margin: 0px !important; }
+
+.navbar-default {
+  margin: 0px !important; }
+
+.inline-group {
+  display: inline-block; }
+
+.link-side {
+  height: 100%;
+  background-color: #353535;
+  padding: 0px 0px 0px 0px; }
+
+.slider {
+  width: 100%;
+  height: 60px;
+  background-color: #353535;
+  color: #ffffff;
+  border-style: none;
+  padding: 0px 0px 20px 0px; }
+  .slider span {
+    margin: 0px 10px 0px 0px; }
+
+.profile-holder {
+  border-bottom: 1px solid #707070;
+  padding: 0px 0px 0px 0px; }
+
+.profile {
+  height: 50px;
+  width: 50px;
+  color: #06E278;
+  border-radius: 20px;
+  margin: 14% 0% 5% 25%; }
+
+.text {
+  color: #06E278;
+  font-size: 10px;
+  margin: 0px 0px 0px 10px; }
+
+.iconholder {
+  color: #ffffff;
+  border-bottom: 1px solid #707070;
+  margin: 20px 0px 20px 0px; }
+
+.icon {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 25px; }
+  .icon img {
+    margin: 0% 0% 2% 26%; }
+  .icon p {
+    padding-left: 10px;
+    text-decoration: none;
+    color: #ffffff; }
+
+.question-side {
+  height: 100%;
+  background-color: #1E1F24;
+  border-right: 2px solid #707070;
+  padding: 0% 0% 0% 2%; }
+
+.question-header {
+  height: 7%; }
+
+.question-right {
+  height: 100%;
+  border-bottom: 1px solid #707070;
+  padding-top: 2%;
+  color: #ffffff;
+  font-family: Montserrat; }
+  .question-right p {
+    font-weight: 600px;
+    font-size: 20px;
+    padding-left: 20%;
+    position: absolute;
+    letter-spacing: 2.88px; }
+  .question-right ul {
+    padding: 0% 0% 0% 63%; }
+  .question-right li {
+    margin: 0px 0px 0px 15px; }
+
+.question-holder {
+  height: 95%;
+  overflow-y: scroll;
+  padding: 0px !important;
+  color: #ffffff; }
+
+.question-holder::-webkit-scrollbar {
+  display: none; }
+
+@-moz-document url-prefix() {
+  .question-holder {
+    overflow: hidden !important; } }
+.git {
+  font-family: Montserrat;
+  letter-spacing: 1.92px;
+  font-weight: 500px;
+  height: 95%;
+  display: none; }
+
+.knowing_github {
+  margin: 5% 0% 0% 5%; }
+
+.git-input {
+  width: 100%;
+  color: #707070;
+  background-color: #353535;
+  border-style: none;
+  margin-top: 2%;
+  height: 60%;
+  padding-left: 3%;
+  letter-spacing: 1.92px;
+  font-weight: 500px; }
+
+.git-selector {
+  width: 50%;
+  color: #707070;
+  background-color: #353535;
+  border-style: none;
+  margin-top: 2%;
+  height: 60%;
+  padding-left: 3%;
+  letter-spacing: 1.92px;
+  font-weight: 500px; }
+
+.git-textarea-container {
+  height: 40%;
+  color: #707070; }
+
+.git-text-area {
+  width: 100%;
+  height: 70%;
+  color: #707070;
+  background-color: #353535;
+  border-style: none;
+  text-decoration: none; }
+
+.git-checkbox {
+  width: 20px;
+  height: 20px; }
+
+.git-checkbox:checked {
+  background-color: #353535 !important;
+  color: #06E278; }
+
+.git-submit {
+  background-color: #353535;
+  color: #06E278;
+  border-style: none;
+  border-radius: 20px;
+  width: 20%;
+  margin-left: 50%;
+  height: 60px; }
+
+.like-button {
+  width: 22%;
+  height: 5%;
+  margin: 0% 0% 0% 52%;
+  border-radius: 10px;
+  border: 1px solid #707070;
+  background-color: #353535;
+  padding: 0% !important; }
+  .like-button span {
+    margin-left: 0px;
+    padding-right: 20px; }
+
+.question-container {
+  border-bottom: 1px solid #707070;
+  margin: 3% 0% 3% 0%;
+  padding-bottom: 2%;
+  height: 7%;
+  color: #ffffff; }
+  .question-container h4 {
+    display: inline-block;
+    margin-left: 3%; }
+  .question-container p {
+    display: inline-block;
+    margin-left: 11%; }
+
+.texteditor-side {
+  padding: 0px !important;
+  height: 100%;
+  background-color: #1E1F24; }
+
+.texteditor-nav {
+  background-color: #353535;
+  height: 5%;
+  padding: 0px 0px 0px 0px !important; }
+
+.selector {
+  background-color: #353535;
+  color: #ffffff;
+  border-style: none; }
+
+.highlight {
+  background-color: #1d1d1d;
+  color: #ffffff; }
+
+.code-and-theme-selector {
+  margin-left: 70%;
+  padding: 15px; }
+
+.fullscreen-btn {
+  background-color: #353535;
+  color: #ffffff;
+  border-style: none; }
+
+.toggler {
+  padding: 5px 0px 0px 10px; }
+  .toggler li {
+    margin: 10px; }
+    .toggler li a {
+      text-decoration: none;
+      color: #ffffff;
+      letter-spacing: 2.05px; }
+
+.pull-down-button {
+  background-color: #1d1d1d;
+  padding: 0px;
+  border-style: none;
+  color: #06E278;
+  width: 90px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  margin-left: 20%; }
+
+.pull-up-button {
+  background-color: #1d1d1d;
+  padding: 0px;
+  border-style: none;
+  color: #06E278;
+  width: 90px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: absolute;
+  margin: 2.5% 0% 0% 20%;
+  display: none; }
+
+.btn-testcase {
+  background-color: #1E1F24;
+  width: 40%;
+  height: 40px;
+  margin: 15px 0px 0px 0px;
+  color: #ffffff;
+  text-align: left;
+  border: 1px solid #353535;
+  border-radius: 7px;
+  padding-right: 5px; }
+
+.testcase-tab {
+  background-color: #1E1F24; }
+
+.testcase {
+  width: 20%;
+  padding: 200px; }
+  .testcase li {
+    padding: 20px;
+    background-color: #1E1F24; }
+  .testcase p {
+    background-color: red;
+    color: #ffffff;
+    height: 100%;
+    width: 100%;
+    padding-left: 5%; }
+
+.run-button {
+  background-color: #6618aa;
+  color: #ffffff;
+  position: absolute;
+  margin: 1% 0% 0% 65%;
+  width: 10%; }
+
+.leaderboard-container {
+  height: 95%;
+  display: none; }
+
+.record-maker {
+  padding-top: 6%;
+  border-bottom: 2px solid #353535;
+  height: 30%; }
+
+.align-dowm {
+  padding-top: 9%;
+  padding-left: 10% !important; }
+
+.align-center {
+  padding-left: 10% !important; }
+
+.container-profile {
+  color: #ffffff; }
+  .container-profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 45px; }
+  .container-profile label {
+    margin-left: 10% !important;
+    font-weight: 300px; }
+  .container-profile p {
+    color: #06E278; }
+
+.crown {
+  width: 69px; }
+
+.profile-button {
+  background-color: #353535;
+  width: 20%;
+  height: 40px;
+  color: #ffffff;
+  border-style: none;
+  border-radius: 20px;
+  display: inline;
+  margin-left: 5%; }
+
+.score-container {
+  color: #ffffff;
+  display: inline; }
+  .score-container h6 {
+    margin-left: 10%; }
+
+.comment-container {
+  height: 94%;
+  color: #ffffff;
+  font-family: Montserrat; }
+
+.comment {
+  width: 80%;
+  height: 60%; }
+
+.comment-box {
+  height: 50%;
+  width: 100%;
+  margin: 0%;
+  background-color: #353535;
+  border-radius: 0 16px 16px 26px; }
+
+.peerComment {
+  padding-top: 10%; }
+
+.bottom-bar {
+  color: #ffffff;
+  width: 60%;
+  background-color: #1d1d1d;
+  border-top: 2px solid #707070;
+  border-right: 4px solid #707070;
+  padding-top: 2%; }
+
+.tag-button {
+  background-color: #312c35;
+  color: #a1a4ad;
+  border-radius: 20px;
+  border-style: none;
+  height: 21px;
+  width: 10%;
+  font-family: Montserrat;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  margin: 2%; }
+
+.next-button {
+  background-color: #1d1d1d;
+  color: #a1a4ad;
+  border-bottom-left-radius: 20px;
+  border-style: none;
+  height: 21px;
+  width: 5%;
+  font-family: Montserrat;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  margin: 1%; }
+
+.set-btn {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #707070;
+  border-radius: 20px;
+  margin: 5% 0% 5% 40%;
+  font-family: Montserrat;
+  background-color: #1E1F24;
+  color: #ffffff; }
+
+.bookmar-container {
+  padding-left: 14%;
+  color: #ffffff; }
+  .bookmar-container h4 {
+    margin-left: 10%; }
+
+/*# sourceMappingURL=codekata.css.map */
