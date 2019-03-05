@@ -1,0 +1,289 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 28, 2019, 12:02:32 PM
+    Author     : Pramod
+*/
+
+@media (max-width:576px)
+{   
+    body
+    {
+        height:812px!important;
+        width:100%;
+        font-family: $primary-font; 
+        color:$primary-font-color!important;
+    }
+    .main-body
+{
+    margin-top: 16%!important;
+}
+    #nav-line
+    {
+        display:none!important;
+    }
+    .navbar-right
+        {
+         margin-left: 0%!important;   
+        }
+    .no-padding-sm
+    {
+        padding:0%;
+    }
+    .main-container
+        {
+            height:90%!important;
+            background-color:$primary-Color;
+            font-family:$primary-font;
+            border: 1px solid $border-primarycolor;
+        }
+
+/// ..........................left part.................
+///this class is fotter of left part
+.variable-container
+        {
+            height:10%!important;
+            background-color:$offset-color;
+            font-family:$primary-font;
+            color:$primary-font-color;
+            border: 1px solid $border-primarycolor;
+        }
+    .menu-container
+    {
+        height:10%!important;
+        background-color:$secondary-Color;
+        font-family:$primary-font;
+       
+    }
+    .content-container
+    {
+        height:90%!important;
+        background-color:$primary-Color;
+        font-family:$primary-font;
+       
+    }
+   
+    .menu
+    {   padding:0% 0% 0% 0%!important;
+        li 
+            {   
+                display:inline-block!important;
+            
+                a
+                {  
+                text-decoration: none; 
+                font-size: $secondary-font-size;
+                display:block;
+                margin-left:1%;
+                }
+             padding: 1% 1% 0% 2%!important;
+             border:none!important;
+              
+        }   
+       
+    }
+    .profile-pic
+    {
+     padding:0px;
+     border-radius: 40px;
+     margin: 0px;
+     height: 30px!important;
+     width:30pximportant;
+    }
+    .title-container
+    {
+        height:8%!important;
+    }
+    .content
+    {
+        height:92%!important;
+    }
+    
+    .down
+    {
+       background-color:$offset2-color;
+        color:$primary-font-color;
+        width:auto;
+        height:auto;
+        border:none;
+        border-top-right-radius:10px;
+        border-top-left-radius:10px;
+        position: absolute;
+        margin-left: 50%;
+        margin-top:6%!important;
+    }
+    .testcase-title
+    {
+        background-color:$secondary-Color;
+        width: 100%;
+        padding:0%!important;
+    }
+    .run-btn
+    {
+        background-color:$runbutton-color;
+        position: absolute;
+    }
+    .up
+{
+    background-color:$offset2-color;
+    color:$primary-font-color;
+    width:auto;
+    height:auto;
+    border:none;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;
+    position: absolute;
+    margin-left:42%!important;
+    
+}
+.down
+{
+   background-color:$offset2-color;
+    color:$primary-font-color;
+    width:auto;
+    height:auto;
+    border:none;
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+    position: absolute;
+    margin-left: 42%!important;
+    margin-top:7%!important;
+}
+.run-btn
+    {
+        background-color:$runbutton-color;
+        color:$primary-font-color;
+        position: absolute;
+        border:none;
+        border-radius:20px;
+        margin-top: 2%;
+        margin-left: 80%!important;
+    }
+ ///this is a container use to hold list of question  
+ .main-holder
+ {
+     width:100%;
+     height:auto;
+     display:flex;
+     padding: 2% 0% 2% 0%;
+ }
+ .leftside
+ {
+     width: 10%;
+     height:100%;
+     display:inline-block;
+     font-size:$secondary-font-size;
+ }
+.rightside
+ {
+     width: 90%;
+     height:auto;
+     display:inline-block;
+     border-bottom: 1px solid $border-primarycolor;
+     padding: 0% 0% 2% 0%;
+     font-size:$secondary-font-size;
+ }
+ ///...............container ends here...........   
+.variable-bg
+ {
+    background-color:$offset2-color;
+    border-radius:5px!important;
+    height:5%;
+    width:14%;
+    margin:1%!important;
+    padding: 1%;
+    display:inline-block;
+    a
+    {
+        padding:.2%!important;
+        color:$primary-font-color;
+        font-size: $secondary-font-size;
+        
+    }
+ }
+ .variable-btn
+ {
+        button
+        {
+         background-color:$offset-color;
+         border: none;
+         display: inline-block;
+         color:$primary-font-color;
+         margin-top: 3%;
+        }
+        p
+        {
+            display: inline-block;
+            color:$primary-font-color;
+        }
+        margin:1% 0% 0% 40%!important;
+        display:inline-block;
+       
+         
+ }
+ .testcase-btn
+{
+   background-color:$primary-Color;
+   border:1px solid $border-secondarycolor;
+   width: 100%!important;
+   
+   span
+   {
+       padding:1% 32% 1% 29%;
+   }
+}
+.git-dialog-positive
+{
+    height:100px;
+    width:100px;
+    padding: 0.5% 1% 0% 2%;
+    margin-top:7%!important;
+    margin-left:13%!important;
+   
+}
+.git-dialog-negative
+{
+    height:100px;
+    width:100px;
+    padding: 0.5% 1% 0% 2%;
+    margin-top:2%!important;
+    margin-left:27%Important;
+   
+}
+.git-video-dialog
+{
+    width:150px;
+    height:70px;
+}
+.git-textarea
+{
+    height: 150px!important;
+    
+}
+.leader-container
+{
+    //padding: 5% 0% 5% 0%;
+    margin: 2% 10% 0% 5%!important;
+   
+}
+.selectors
+{
+    background-color:$secondary-Color;
+    padding-top: 3%;
+    width:100%;
+    border:none;
+    color:$primary-font-color;
+    font-family: $primary-font;
+    font-size:$secondary-font-size!important;
+}
+
+.leader-crown
+{
+    position: absolute;
+    left: 43%;
+    width: 33px;
+}
+}

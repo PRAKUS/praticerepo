@@ -1,0 +1,411 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 27, 2019, 5:43:22 PM
+    Author     : Pramod
+*/
+
+@import"base/base";
+@import"mediaquires/tablet";
+@import"mediaquires/smallscreen";
+@import "util/height";
+body
+{
+    height: 974px;
+    width:100%!important;
+    font-family: $primary-font; 
+    color:$primary-font-color!important;
+}
+.main-body
+{   
+    height:100%;
+    margin-top:3.5%;
+}
+///this class is foradjustment of logo in navbar
+.navbar-brand
+{
+    padding: 3px 0px 0px 10px!important;
+}
+.navbar
+{
+    margin-bottom: 0px;
+}
+ ///this class is for green highlights
+ .highlights
+ {
+     color:$highlight-color;
+ }
+ 
+.padding-bottom
+{
+    padding-bottom: 20%;
+}
+.padding
+{
+    padding:2%;
+}
+.top-padding
+{
+    padding-top:10%;
+}
+
+.inline
+{
+    display: inline-block;
+}
+
+.list-item
+{
+   
+   text-decoration: none;
+   display:block;
+}
+.scroll
+{
+    overflow:scroll;
+    
+}
+.scroll::-webkit-scrollbar
+{
+    display: none;
+}
+
+.navbar-right
+{
+ margin-left: 50%;   
+}
+.nav-item
+{   
+    margin:0% 0% 0% 0%;
+    font-size: $primary-font-size;
+    font-weight: $mid;
+    color: $offset2-color;
+}
+.nav-item-custom
+{
+    color:$runbutton-color!important;
+}
+
+/// this class is for link and content conainer 
+.main-container
+{
+    height: 93%;
+    background-color:$primary-Color;
+    font-family:$primary-font;
+    border: 1px solid $border-primarycolor;
+}
+
+/// ..........................left part.................
+///this class is fotter of left part
+.variable-container
+{
+    height:7%;
+    background-color:$offset-color;
+    font-family:$primary-font;
+    color:$primary-font-color;
+    border: 1px solid $border-primarycolor;
+}
+///this class has all links
+.menu-container
+    {
+        font-family:$primary-font;
+        background-color:$secondary-Color;
+    }
+///this class is for all contain
+.content-container
+    {   
+        height:100%;
+        background-color:$primary-Color;
+        font-family:$primary-font;
+        font-size: $primary-font-size ;
+       
+    }
+  ///tghis class is for side menu  
+ .menu
+ {  
+     padding:0% 10% 0% 10%;
+     li 
+        {
+            display:block;
+           a
+            {  
+             text-decoration: none; 
+             text-align: center!important;
+             text-justify: auto;
+             font-size: $secondary-font-size;
+             color:$primary-font-color;
+             display:inline-block;
+             }
+             padding: 10%;
+             border-bottom: 1px solid $border-primarycolor;
+        }
+    
+ }
+
+ ///this classisfor profile pic 
+ .profile-pic
+ {
+ 
+  border-radius: 40px;
+  
+ }
+
+ ///*********************fotter classes*************
+ .variable-bg
+ {
+    background-color:$offset2-color;
+    border-radius: 20px;
+    height:5%;
+    width:14%;
+    margin:.3%;
+    padding: 1%;
+    display:inline-block;
+    a
+    {
+        padding:.2%!important;
+        color:$primary-font-color;
+        
+    }
+ }
+ ///this class is for blue tag
+ .variable-tag
+ {
+  display: inline;
+  padding:0% 0% 0% 3%;
+ }
+ .variable-btn
+ {
+        button
+        {
+         background-color:$offset-color;
+         border: none;
+         display: inline-block;
+         color:$primary-font-color;
+         margin-top: 3%;
+        }
+        p
+        {
+            display: inline-block;
+            color:$primary-font-color;
+        }
+        margin-top:.2em;
+        display:inline-block;
+       
+         
+ }
+ ///***************************title container*************************
+ .title-container
+ {
+    height:2%;
+    color:$primary-font-color;
+ }
+ .content
+ {
+     height:98%!important;
+     
+ }
+ ///this is a container use to hold list of question  
+ .main-holder
+ {
+     width:100%;
+     height:auto;
+     display:flex;
+     padding: 2% 0% 2% 0%;
+ }
+ .leftside
+ {
+     width: 10%;
+     height:100%;
+     display:inline-block;
+ }
+.rightside
+ {
+     width: 90%;
+     height:auto;
+     display:inline-block;
+     border-bottom: 1px solid $border-primarycolor;
+     padding: 0% 0% 2% 0%;
+ }
+ ///...............container ends here...........
+.btn-submit
+{
+    background-color:$secondary-Color;
+    &:hover
+        {
+        color:$highlight-color;
+    }
+    
+}
+/// this is for programme title ie. test.java,test.py
+.programme-title
+{
+    background-color: $offset-color;
+    width:20%;
+    height:100%;
+    padding: 0%;
+}
+ ///this is for theme and langauge selection
+.selectors
+{
+    background-color:$secondary-Color;
+    padding-top: 3%;
+    border:none;
+    color:$primary-font-color;
+    font-size: $primary-font-size!important;
+    width:100% important;
+}
+.guvi-ide
+{
+    background-color: $secondary-Color;
+    color:$primary-font-color;   
+}
+.testcase-title
+{
+    background-color:$secondary-Color;
+    width: 100%;
+}
+.up
+{
+    background-color:$offset2-color;
+    color:$primary-font-color;
+    width:90px;
+    height:auto;
+    border:none;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;
+    position: absolute;
+    margin-left: 50%;
+    
+}
+.down
+{
+   background-color:$offset2-color;
+    color:$primary-font-color;
+    width:90px;
+    height:auto;
+    border:none;
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+    position: absolute;
+    margin-left: 50%;
+    margin-top:4.5%;
+}
+.run-btn
+    {
+        background-color:$runbutton-color;
+        color:$primary-font-color;
+        position: absolute;
+        border:none;
+        border-radius:20px;
+        margin-top: 2%;
+        margin-left: 90%;
+    }
+.test-console-container
+{
+    background-color:$primary-Color; 
+}    
+.testcase-btn
+{
+   background-color:$primary-Color;
+   border:1px solid $border-secondarycolor;
+   width: 50%;
+   
+   span
+   {
+       padding:1% 32% 1% 29%;
+   }
+}
+/// for git tab 
+.github-maincontainer
+{
+    height:auto;
+    font-family:$primary-font!important;
+    color:$secondary-font-color!important;
+    font-weight:$soft!important; 
+}
+.git-selector
+{
+   
+    select
+    {
+        padding:2% 1% 2% 1%;
+        margin:2% 0% 2% 1%;
+    }
+}
+.git-textarea
+{
+    height: 200px;
+    background-color: $secondary-Color;
+    border:none;
+    margin-bottom: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.git-dialog-positive
+{
+    height: 200px;
+    width:300px;
+    background-color:$secondary-Color;
+    padding: 0.5% 1% 0% 2%;
+    margin-top:4%!important;
+    margin-left:13%;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px; 
+    border-bottom-right-radius:20px; 
+}
+.git-dialog-negative
+{
+    height: 200px;
+    width:300px;
+    background-color:$secondary-Color;
+    padding: 0.5% 1% 0% 2%;
+    margin-top:4%;
+    margin-left:30%;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px; 
+    border-bottom-left-radius:20px; 
+}
+.git-video-dialog
+{
+    width:640px;
+    height:300px;
+}
+
+.btn-ok
+{
+    background-color:$primary-Color;
+    border:1px solid $border-primarycolor;
+    width:20%;
+    color:$primary-font-color;
+    border-radius: 20px;
+    font-weight:$soft;
+    font-family:$primary-font;
+    font-size:$secondary-font-size;
+}
+///leader tab
+.leader-container
+{
+    //padding: 5% 0% 5% 0%;
+    margin: 2% 15% 0% 5%;
+    font-size: $secondary-font-size;
+}
+.leader-crown
+{
+    position: absolute;
+}
+///comments tab
+.comment
+{
+    width:80%;
+    height:150px;
+    padding:2%;
+    margin-left:15%;
+    text-decoration: none;
+    border-radius: 0px 20px 20px 20px;
+    background-color:$secondary-Color;
+    border:1px solid $border-primarycolor;
+    
+}

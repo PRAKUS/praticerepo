@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="theme/dracula.css" rel="stylesheet" type="text/css">
+        <link href="theme/ambiance-mobile.css" rel="stylesheet" type="text/css">
+        <link href="theme/3024-day.css" rel="stylesheet" type="text/css">
+        <link href="theme/abcdef.css" rel="stylesheet" type="text/css">
+        <link href="theme/ambiance.css" rel="stylesheet" type="text/css">
+        <link href="theme/ambiance-mobile.css" rel="stylesheet" type="text/css">
+        <link href="theme/base16-dark.css" rel="stylesheet" type="text/css">
+        <link href="theme/duotone-light.css" rel="stylesheet" type="text/css">
+        <link href="theme/the-matrix.css" rel="stylesheet" type="text/css">
+        <link href="theme/xq-light.css" rel="stylesheet" type="text/css">
+        <link href="theme/xq-dark.css" rel="stylesheet" type="text/css">
+        <link href="css/codekata.css" rel="stylesheet" type="text/css">
+        <link href="lib/codemirror.css" rel="stylesheet" type="text/css">
+        <script src="lib/codemirror.js" type="text/javascript"></script>
+        <script src="mode/clike/clike.js" type="text/javascript"></script>
+        <script src="mode/css/css.js" type="text/javascript"></script>
+        <script src="mode/python/python.js" type="text/javascript"></script>
+        <script src="mode/django/django.js" type="text/javascript"></script>
+        <script src="mode/htmlembedded/htmlembedded.js" type="text/javascript"></script>
+        <script src="mode/javascript/javascript.js" type="text/javascript"></script>
+        <script src="mode/php/php.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="codekata2.js" type="text/javascript"></script>
+    </head>
+    <body>
+         <nav class="navbar navbar-expand-lg navbar-expand-xl navbar-expand-md navbar-expand-sm navbar-light bg-light fixed-top ">
+             <a class="navbar-brand" href="#"><img src="image/GUVI_LOGO.svg" alt="Guci Logo"></a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navbar" aria-controls="Navbar" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>   
+            <div class="collapse navbar-collapse ml-auto flex-grow-0 " id="Navbar">
+                <ul  class="navbar-nav "  >
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown0" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              learn
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown0">
+                              <a class="dropdown-item" href="https://www.guvi.in/mentor_info.html">Mentorship</a>
+                              <a class="dropdown-item" href="https://www.guvi.in/video_info.html">Video Courses</a>
+                              <a class="dropdown-item" href="https://www.guvi.in/bootcamp_info.html">Bootcamp</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="navbarDropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Practice
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <a class="dropdown-item" href="https://www.guvi.in/codekata_level.html">CodeKata</a>
+                                <a class="dropdown-item" href="https://www.guvi.in/puzzle.html">Puzzles</a>
+                                <a class="dropdown-item" href="https://www.guvi.in/project-level.html">Project Board</a>
+                                <a class="dropdown-item" href="https://www.guvi.in/free-books.html">Free Books</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="navbarDropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Jobs
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <a class="dropdown-item" href="https://www.guvi.in/jobs.html">Tech Challenges</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Leaderboard
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="navbarDropdown3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              More 
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                                <a class="dropdown-item" href="https://www.guvi.in/show_mentor.html">Mentors</a>
+                                <a class="dropdown-item" href="https://www.guvi.in/blogs">Bologs</a>
+                                <a class="dropdown-item" href="https://www.guvi.in/team.html">The Team</a>
+                                <a class="dropdown-item" href="https://www.guvi.in/qa">QA</a>
+                                <a class="dropdown-item" href="https://www.guvi.in/news_room.html">In News</a>
+                                <a class="dropdown-item" href="https://www.guvi.in/success-stories.html">Success Stories</a>
+                                <a class="dropdown-item" href="https://www.guvi.in/career_compute.html">Career Compute</a>
+                                <a class="dropdown-item" href="https://www.guvi.in/events.html">Event</a>
+                                <a class="dropdown-item" href="https://www.guvi.in/toppers.html">Toppers</a>
+                                <a class="dropdown-item" href="https://www.guvi.in/earnpoints.html">How to Earn Points?</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown"> 
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="navbarDropdown4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Practice</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                                
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Refer & Earn</a></li>
+                        <li class="nav-item"><img id="nav-line" src="image/navbar_Line.svg"></li>
+                        <li class="nav-item "><a class="nav-link nav-item-custom" href="#">Logout</a></li>
+                </ul>
+            </div>    
+        </nav>
+        <!--**************************************************main body for code kata ****************************** -->
+        
+            <div class="row main-body">
+                <div class="col-lg-12 col-sm-12 col-md-12 col-xl-6 h-100 " >
+                    <div class="row h-100">
+                        <div class="col-sm-12 col-lg-12 col-md-12  main-container" >
+                            <div class="row h-100">
+                                <!--*********************************MENU CONTAINER****************************************** -->
+                                <div class="col-12 col-sm-2 col-lg-2 col-md-2 col-xl-2 menu-container ">
+                                    <ul  class="menu">
+                                        <li id="profile-tip" class='text-center'><a href="#">
+                                                <img src='image/profilepic.svg' alt='profilepic' class='profile-pic'>
+                                                <p class='highlights m-0'>Rank:<span>12354</span></p>
+                                                <p class='highlights'>Point:<span>121212</span></p>
+                                            </a>
+                                        </li>
+                                        <li id="git-tip" class='text-center'><a href="#">
+                                                <img src='image/github.svg' alt='github icon' class='padding-bottom'>
+                                                <p>Github</p>
+                                            </a>
+                                        </li>
+                                        <li id="peers-tip" class='text-center'><a href="#" >
+                                                <img src='image/peerscode.svg' alt='Peers Code-icon' class='padding-bottom'>
+                                                <p>Peer's Code</p>
+                                            </a>
+                                        </li>
+                                        <li id="leadercrown-tip" class='text-center'><a href="#">
+                                                <img src='image/leadercrown.svg' alt='leader-icon' class='padding-bottom'>
+                                                <p>Leaderboard</p>
+                                            </a>
+                                        </li>
+                                        <li id="comment-tip" class='text-center'><a href="#">
+                                                <img src='image/comment.svg' alt='comment-icon' class='padding-bottom'>
+                                                <p>Comments</p>
+                                            </a>
+                                        </li>
+                                        <li id="bookmark-tip" class='text-center'><a href="#">
+                                                <img src='image/bookmark.svg' alt='bookmark-icon' class='padding-bottom'>
+                                                <p>Bookmarks</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--*********************************CONTENT CONTAINER****************************************** -->
+                                <div class="col-12 col-sm-10 col-lg-10 col-md-10 content-container scroll " >
+                                    <div class="row h-100">
+                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 title-container"  >
+                                            <div class="row ">
+                                                <div class="col-1 col-lg-1 col-sm-1 col-xl-1 col-md-1 " style="background-color:; ">
+                                                    <a id="list" class="text-center" > <img src="image/list-btn.svg" alt="list button" ></a>
+                                                    <a id="close" class="text-center" style="display:none"> <img src="image/close.svg" alt="close"  ></a>
+                                                </div>
+                                                <div class="col-11 col-lg-11 col-sm-11 col-xl-11 col-md-11  " >
+                                                    <!-- +++++++++++++++++++++++++++++++++++++++DEFAULT HEADER+++++++++++++++++++++++++++++++++-->
+                                                    <div id="default-header" class="border-bottom">
+                                                        <p id="header" class="inline float-center">Question</p>
+                                                        <ul class="inline float-right">
+                                                            <li class="inline "><a href="#"><img src="image/share.svg" alt="share"></a></li>
+                                                            <li class="inline "><a>SHARE</a></li>
+                                                            <li class="inline "><a href="#"><img src="image/bookmark-sm.svg" alt="bookmark"></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!--++++++++++++++++++++++++++++++++++++++QUESTION HEADER++++++++++++++++++++++++++++++++++-->
+                                                    <div id="question-header" style="display:none">
+                                                        <h3  class="text-center">Question</h3>
+                                                    </div>
+                                                    <!--***************************************************************-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 content " >
+                                            <!--////////////////////////////////////////////////default///////////////////////////////////////////-->
+                                            <div id="default">
+
+                                            </div>
+                                            <!--////////////////////////////////////////////QUESTIONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+                                            <div id="questions-list" style="display:none;">
+
+                                                        <!--- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^q1^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+                                                    <div id="question1" class="main-holder" >
+                                                        <div class="leftside text-center" >
+                                                            <h4>Q1.</h4>
+                                                        </div>
+                                                        <div  class="rightside" >
+                                                            <a data-toggle="collapse" data-target="#q1" aria-expanded="false" aria-controls="#q1">Write a function that returns the sum of two numbers.</a>
+                                                            <img id="submit-yes" class="float-right" src="image/tick-finished.svg" alt="submitted" style="display: none;">
+                                                            <img id="submit-no" class="float-right" src="image/tick-notfinished.svg" alt="notsubmitted" style="display:;">
+                                                            <div id="q1" class="collapse" data-toggle="collapse" data-target="#q1"  >
+                                                                <p>For param1 = 1 and param2 = 2, the output should be
+                                                                    add(param1, param2) = 3.
+                                                                </p>
+                                                                <p>Input/Output</p>
+                                                                <p>[execution time limit] 4 seconds (js)</p>
+                                                                <input id="ans1" class="float-right btn btn-submit" data-toggle="collapse" data-target="#q1" type="submit" >
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                             <!--- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^q2^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+
+                                                    <div id="question2" class="main-holder" >
+                                                        <div class="leftside text-center" >
+                                                            <h4>Q2.</h4>
+                                                        </div>
+                                                        <div class="rightside" >
+                                                            <a data-toggle="collapse" data-target="#q2" aria-expanded="false" aria-controls="#q2">Write a function that returns the sum of two numbers.</a>
+                                                            <img class="float-right" src="image/tick-finished.svg" alt="submitted" style="display: none;">
+                                                            <img class="float-right" src="image/tick-notfinished.svg" alt="notsubmitted" style="display:;">
+                                                            <div id="q2" class="collapse" data-toggle="collapse" data-target="#q2" >
+                                                                <p>For param1 = 1 and param2 = 2, the output should be
+                                                                    add(param1, param2) = 3.
+                                                                </p>
+                                                                <p>Input/Output</p>
+                                                                <p>[execution time limit] 4 seconds (js)</p>
+                                                                <input id="ans2" class="float-right btn btn-submit" data-toggle="collapse" data-target="#q2" type="submit" >
+                                                            </div>
+                                                        </div>
+                                                    </div>         
+                                                </div>
+                                            <!--***************************************************Question Elaboration************************************************-->
+                                            <div  id="question-elobration" class="main-holder" style="display:none">
+                                                <div class="leftside">   
+                                                </div>
+                                                <div id="full-question" >
+                                                    <h5>Write a function that returns the sum of two numbers.</h5>
+                                                    <p>Example</p>
+                                                    <p>For param1 = 1 and param2 = 2, the output should be</p>
+                                                    <p>Input/Output</p>
+                                                    <p>[execution time limit] 4 seconds (js)
+                                                        [input] integer param1<br>
+                                                        Guaranteed constraints:<br>
+                                                        -1000 ≤ param1 ≤ 1000.<br>
+                                                        [input] integer param2<br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!--****************************************************GITHUB****************************************** -->
+                                            <div id="github-main" class="row github-maincontainer mt-3" style="display:none">
+                                                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 h-10 padding" >
+                                                    <a data-toggle="modal" data-target="#git-vedio" class="inline list" href="#"><img class="inline" src="image/video.btn.svg" alt="youtube btn"><p class="inline">&nbsp;&nbsp;What is Github?</p></a>
+                                                    <div id="git-vedio" class="modal">
+                                                        <div class="modal-dialog ">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button> 
+                                                            <video class=" git-video-dialog" controls><source src=""></video>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 git-selector" >
+                                                    <select id="git-langauge" class="selectors w-50">
+                                                         <option class="float-center" >Select Your Langauge</option>
+                                                         <option class="text-center" value="clike">java</option>
+                                                         <option class="text-center" value="python">python</option>
+                                                         <option class="text-center" value="clike">c++</option>
+                                                         <option class="text-center" value="htmlembedded">html</option>
+                                                         <option class="text-center" value="css">css</option>
+                                                         <option class="text-center" value="javascript">javascript</option>
+                                                         <option class="text-center" value="php">php</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 " >
+                                                    <p  class="float-left " data-toggle="modal" data-target="#positive">positive <img src="image/qustag.svg"></p><br>
+                                                    <textarea class="w-100 git-textarea" ></textarea>
+                                                    <div id="positive" class="modal">
+                                                        <div class="modal-dialog git-dialog-positive">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button> 
+                                                            <p>Example :</p>
+                                                            <p>write a program to add to integer</p>
+                                                            <p>Positive testcase :</p>
+                                                            <p>Input : 25 25</p> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" >
+                                                     <p class="float-right " data-toggle="modal" data-target="#negative">negative <img src="image/qustag.svg"></p><br>
+                                                    <textarea class="w-100 git-textarea" ></textarea>
+                                                    <div id="negative" class="modal">
+                                                        <div class="modal-dialog git-dialog-negative">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button> 
+                                                            <p>Example :</p>
+                                                            <p>write a program to add to integer</p>
+                                                            <p>Negative testcase :</p>
+                                                            <p>Input : 25 25</p> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-10 col-lg-10 col-xl-10 " >
+                                                    <input type="checkbox" class="inline">
+                                                    <p class="inline">I agree it his my code </p>
+                                                </div>
+                                                <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2 " >
+                                                    <input class="btn btn-submit" type="submit">
+                                                </div>
+                                            </div>
+                                            <!--*********************************************peercode*****************************************************-->
+                                            <div id="peer" class=" mt-3"  style="display:none">
+                                                <div  class="main-holder ">
+                                                    <div class="leftside" >
+                                                        <h4>Q1.</h4>
+                                                    </div>
+                                                    <div class="rightside">
+                                                        <a data-toggle='collapse' data-target='#peercode'>Write a function that returns the sum of two numbers.</a>
+                                                    </div>
+
+                                                </div>
+                                                <div id='peercode' class="collapse">
+                                                    <div class="main-holder">
+                                                        <div class="leftside">
+                                                            <img class="profile-pic" src="image/profilepic.svg" alt="profile-pic">
+                                                        </div>
+                                                        <div class="rightside">
+                                                            <p class="m-0">Hunter</p>
+                                                            <a href='#'>Https://Github.Com/15EC046/Guvi-Beginner/Blob/Mast...</a>
+                                                            <button class="btn btn-ok "><img class="float-left" src="image/likes.svg" alt="likes"><span class="float-center">222k</span></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="main-holder">
+                                                        <div class="leftside">
+                                                            <img class="profile-pic" src="image/profilepic.svg" alt="profile-pic">
+                                                        </div>
+                                                        <div class="rightside">
+                                                            <p class="m-0">Hunter</p>
+                                                            <a href='#'>Https://Github.Com/15EC046/Guvi-Beginner/Blob/Mast...</a>
+                                                            <button class="btn btn-ok "><img class="float-left" src="image/likes.svg" alt="likes"><span class="float-center">222k</span></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="main-holder">
+                                                        <div class="leftside">
+                                                            <img class="profile-pic" src="image/profilepic.svg" alt="profile-pic">
+                                                        </div>
+                                                        <div class="rightside">
+                                                            <p class="m-0">Hunter</p>
+                                                            <a href='#'>Https://Github.Com/15EC046/Guvi-Beginner/Blob/Mast...</a>
+                                                            <button class="btn btn-ok "><img class="float-left" src="image/likes.svg" alt="likes"><span class="float-center">222k</span></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="main-holder">
+                                                        <div class="leftside">
+                                                            <img class="profile-pic" src="image/profilepic.svg" alt="profile-pic">
+                                                        </div>
+                                                        <div class="rightside">
+                                                            <p class="m-0">Hunter</p>
+                                                            <a href='#'>Https://Github.Com/15EC046/Guvi-Beginner/Blob/Mast...</a>
+                                                            <button class="btn btn-ok "><img class="float-left" src="image/likes.svg" alt="likes"><span class="float-center">222k</span></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="main-holder">
+                                                        <div class="leftside">
+                                                            <img class="profile-pic" src="image/profilepic.svg" alt="profile-pic">
+                                                        </div>
+                                                        <div class="rightside">
+                                                            <p class="m-0">Hunter</p>
+                                                            <a href='#'>Https://Github.Com/15EC046/Guvi-Beginner/Blob/Mast...</a>
+                                                            <button class="btn btn-ok "><img class="float-left" src="image/likes.svg" alt="likes"><span class="float-center">222k</span></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="main-holder">
+                                                        <div class="leftside">
+                                                            <img class="profile-pic" src="image/profilepic.svg" alt="profile-pic">
+                                                        </div>
+                                                        <div class="rightside">
+                                                            <p class="m-0">Hunter</p>
+                                                            <a href='#'>Https://Github.Com/15EC046/Guvi-Beginner/Blob/Mast...</a>
+                                                            <button class="btn btn-ok "><img class="float-left" src="image/likes.svg" alt="likes"><span class="float-center">222k</span></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="main-holder">
+                                                        <div class="leftside">
+                                                            <img class="profile-pic" src="image/profilepic.svg" alt="profile-pic">
+                                                        </div>
+                                                        <div class="rightside">
+                                                            <p class="m-0">Hunter</p>
+                                                            <a href='#'>Https://Github.Com/15EC046/Guvi-Beginner/Blob/Mast...</a>
+                                                            <button class="btn btn-ok "><img class="float-left" src="image/likes.svg" alt="likes"><span class="float-center">222k</span></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="main-holder">
+                                                        <div class="leftside">
+                                                            <img class="profile-pic" src="image/profilepic.svg" alt="profile-pic">
+                                                        </div>
+                                                        <div class="rightside">
+                                                            <p class="m-0">Hunter</p>
+                                                            <a href='#'>Https://Github.Com/15EC046/Guvi-Beginner/Blob/Mast...</a>
+                                                            <button class="btn btn-ok "><img class="float-left" src="image/likes.svg" alt="likes"><span class="float-center">222k</span></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="main-holder">
+                                                        <div class="leftside">
+                                                            <img class="profile-pic" src="image/profilepic.svg" alt="profile-pic">
+                                                        </div>
+                                                        <div class="rightside">
+                                                            <p class="m-0">Hunter</p>
+                                                            <a href='#'>Https://Github.Com/15EC046/Guvi-Beginner/Blob/Mast...</a>
+                                                            <button class="btn btn-ok "><img class="float-left" src="image/likes.svg" alt="likes"><span class="float-center">222k</span></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="main-holder">
+                                                        <div class="leftside">
+                                                            <img class="profile-pic" src="image/profilepic.svg" alt="profile-pic">
+                                                        </div>
+                                                        <div class="rightside">
+                                                            <p class="m-0">Hunter</p>
+                                                            <a href='#'>Https://Github.Com/15EC046/Guvi-Beginner/Blob/Mast...</a>
+                                                            <button class="btn btn-ok "><img class="float-left" src="image/likes.svg" alt="likes"><span class="float-center">222k</span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="peer-q2" class="main-holder">
+                                                    <div class="leftside">
+                                                        <h4>Q2.</h4>
+                                                    </div>
+                                                    <div class="rightside">
+                                                        <a>Write a function that returns the sum of two numbers.</a>
+                                                    </div>
+                                                </div>
+                                                <div id="peer-q3" class="main-holder">
+                                                    <div class="leftside">
+                                                        <h4>Q3.</h4>
+                                                    </div>
+                                                    <div class="rightside">
+                                                        <a>Write a function that returns the sum of two numbers.</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- ***********************************************leaderboards********************************************* -->
+                                            <div id="leaderboard" class="row h-100 mt-3" style="display:none">
+                                                <div class=" col-sm-12 col-md-12 col-lg-12 col-xl-12 ">  
+                                                    <ul class="border-bottom">
+                                                        <li class="leader-container inline text-center align-text-top">
+                                                            <img class="profile-pic float-center" src="image/profilepic.svg" alt="profile">
+                                                             <img class="" src="image/2.svg" alt="2nd rank ">
+                                                            <p class=" text-center m-0">Hunter</p>
+                                                            <p class="highlights  text-center">Score<span>1212121</span></p>
+                                                        </li>
+                                                        <li class="leader-container inline text-center align-text-bottom">
+                                                            <img class="leader-crown " src="image/leader-Crown.svg" alt="leader crown">
+                                                            <img class="profile-pic float-center mt-4" src="image/profilepic.svg" alt="profile">
+                                                            <img class="" src="image/1.svg" alt="1st ">
+                                                            <p class=" text-center m-0">Hunter</p>
+                                                            <p class="highlights text-center m-0">Score<span>1212121</span></p>
+                                                            <img src="image/bacth0.svg" alt="batch">
+                                                            <img src="image/bacth1.svg" alt="batch">
+                                                        </li>
+                                                           
+                                                        <li class="leader-container inline text-center align-text-top">
+                                                            <img class="profile-pic" src="image/profilepic.svg" alt="profile">
+                                                             <img class="" src="image/3.svg" alt="3rdrank ">
+                                                            <p class=" text-center m-0">Hunter</p>
+                                                            <p class="highlights text-center">Score<span>1212121</span></p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                                    <div class="main-holder">
+                                                        <div class="leftside">
+                                                            <img class="profile-pic" src="image/profilepic.svg" alt="profilepic">
+                                                        </div>
+                                                        <div class="rightside">
+                                                            <p class="inline m-0">Hunter</p>
+                                                            <p class="inline m-0">Score:<span>1,23,453</span></p><br>
+                                                            <a>Https://Github.Com/15EC046/Guvi-Beginner/Blob/Mast...</a>
+                                                            <input class="btn btn-ok ml-3" value="view-profile">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                                    <div class="main-holder">
+                                                        <div class="leftside">
+                                                            <img class="profile-pic" src="image/profilepic.svg" alt="profilepic">
+                                                        </div>
+                                                        <div class="rightside">
+                                                            <p class="inline m-0">Hunter</p>
+                                                            <p class="inline m-0">Score:<span>1,23,453</span></p><br>
+                                                            <a>Https://Github.Com/15EC046/Guvi-Beginner/Blob/Mast...</a>
+                                                            <input class="btn btn-ok ml-3" value="view-profile">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                                    <div class="main-holder">
+                                                        <div class="leftside">
+                                                            <img class="profile-pic" src="image/profilepic.svg" alt="profilepic">
+                                                        </div>
+                                                        <div class="rightside">
+                                                            <p class="inline m-0">Hunter</p>
+                                                            <p class="inline m-0">Score:<span>1,23,453</span></p><br>
+                                                            <a>Https://Github.Com/15EC046/Guvi-Beginner/Blob/Mast...</a>
+                                                            <input class="btn btn-ok ml-3" value="view-profile">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                                    <div class="main-holder">
+                                                        <div class="leftside">
+                                                            <img class="profile-pic" src="image/profilepic.svg" alt="profilepic">
+                                                        </div>
+                                                        <div class="rightside">
+                                                            <p class="inline m-0">Hunter</p>
+                                                            <p class="inline m-0">Score:<span>1,23,453</span></p><br>
+                                                            <a>Https://Github.Com/15EC046/Guvi-Beginner/Blob/Mast...</a>
+                                                            <input class="btn btn-ok ml-3" value="view-profile">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                                    <div class="main-holder">
+                                                        <div class="leftside">
+                                                            <img class="profile-pic" src="image/profilepic.svg" alt="profilepic">
+                                                        </div>
+                                                        <div class="rightside">
+                                                            <p class="inline m-0">Hunter</p>
+                                                            <p class="inline m-0">Score:<span>1,23,453</span></p><br>
+                                                            <a>Https://Github.Com/15EC046/Guvi-Beginner/Blob/Mast...</a>
+                                                            <input class="btn btn-ok ml-3" value="view-profile">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                                    <div class="main-holder">
+                                                        <div class="leftside">
+                                                            <img class="profile-pic" src="image/profilepic.svg" alt="profilepic">
+                                                        </div>
+                                                        <div class="rightside">
+                                                            <p class="inline m-0">Hunter</p>
+                                                            <p class="inline m-0">Score:<span>1,23,453</span></p><br>
+                                                            <a>Https://Github.Com/15EC046/Guvi-Beginner/Blob/Mast...</a>
+                                                            <input class="btn btn-ok ml-3" value="view-profile">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                                    <div class="main-holder">
+                                                        <div class="leftside">
+                                                            <img class="profile-pic" src="image/profilepic.svg" alt="profilepic">
+                                                        </div>
+                                                        <div class="rightside">
+                                                            <p class="inline m-0">Hunter</p>
+                                                            <p class="inline m-0">Score:<span>1,23,453</span></p><br>
+                                                            <a>Https://Github.Com/15EC046/Guvi-Beginner/Blob/Mast...</a>
+                                                            <input class="btn btn-ok ml-3" value="view-profile">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--********************************************** Comments ************************************************************-->
+                                            <div id="comments" class=" mt-3" style='display:none'>
+                                                <div  class="main-holder">
+                                                    <div class="leftside" >
+                                                        <h4>Q1.</h4>
+                                                    </div>
+                                                    <div class="rightside">
+                                                        <a data-toggle='collapse' data-target='#comment'>Write a function that returns the sum of two numbers.</a>
+                                                    </div>
+
+                                                </div>
+                                                <div id='comment' class="collapse">
+                                                    <div class="border-bottom">
+                                                        <textarea class=" comment" placeholder="your thoughts"></textarea>
+                                                        <input type="submit" class="btn btn-submit mb-1">
+                                                    </div>
+                                                    <div class="main-holder">
+                                                        <div class="leftside">
+                                                            <img class="profile-pic" src="image/profilepic.svg" alt="profile-pic">
+                                                        </div>
+                                                        <div class="rightside">
+                                                            <p class="m-0">wow nice question, very challenging ……!!!</p>
+                                                            <p class="inline mb-0">USERS</p>
+                                                            <p class="inline ml-5 mb-0">1week ago</p>
+                                                        </div>
+                                                    </div>
+                                                     <div class="main-holder">
+                                                        <div class="leftside">
+                                                            <img class="profile-pic" src="image/profilepic.svg" alt="profile-pic">
+                                                        </div>
+                                                        <div class="rightside">
+                                                            <p class="m-0">wow nice question, very challenging ……!!!</p>
+                                                            <p class="inline mb-0">USERS</p>
+                                                            <p class="inline ml-5 mb-0">1week ago</p>
+                                                        </div>
+                                                    </div>
+                                                     <div class="main-holder">
+                                                        <div class="leftside">
+                                                            <img class="profile-pic" src="image/profilepic.svg" alt="profile-pic">
+                                                        </div>
+                                                        <div class="rightside">
+                                                            <p class="m-0">wow nice question, very challenging ……!!!</p>
+                                                            <p class="inline mb-0">USERS</p>
+                                                            <p class="inline ml-5 mb-0">1week ago</p>
+                                                        </div>
+                                                    </div>
+                                                     <div class="main-holder">
+                                                        <div class="leftside">
+                                                            <img class="profile-pic" src="image/profilepic.svg" alt="profile-pic">
+                                                        </div>
+                                                        <div class="rightside">
+                                                            <p class="m-0">wow nice question, very challenging ……!!!</p>
+                                                            <p class="inline mb-0">USERS</p>
+                                                            <p class="inline ml-5 mb-0">1week ago</p>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div id="peer-q2" class="main-holder">
+                                                    <div class="leftside">
+                                                        <h4>Q2.</h4>
+                                                    </div>
+                                                    <div class="rightside">
+                                                        <a>Write a function that returns the sum of two numbers.</a>
+                                                    </div>
+                                                </div>
+                                                <div id="peer-q3" class="main-holder">
+                                                    <div class="leftside">
+                                                        <h4>Q3.</h4>
+                                                    </div>
+                                                    <div class="rightside">
+                                                        <a>Write a function that returns the sum of two numbers.</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--*************************************************bookmarks*********************************************************-->
+                                            <div id="bookmarks" class="row h-10 " style="display:none;">
+                                                <div class="col-12 col-sm-12 mt-sm-3">
+                                                    <div class="row h-100 text-center">
+                                                        <div class="col-sm-12 text-left mt-sm-4">
+                                                            <h4>Newbie</h4>
+                                                        </div>
+                                                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 mx-3 my-2 " >
+                                                            <input class="btn btn-submit" type="button" value="SET1-Q1">
+                                                        </div>
+                                                        <div class="col-3  col-sm-3 col-md-3 col-lg-3 col-xl-3 mx-3 my-2">
+                                                             <input class="btn btn-submit" type="button" value="SET1-Q1">
+                                                        </div>
+                                                        <div class="col-3  col-sm-3 col-md-3 col-lg-3 col-xl-3 mx-3 my-2" >
+                                                            <input class="btn btn-submit" type="button" value="SET1-Q1">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 mt-sm-3">
+                                                    <div class="row h-100 text-center">
+                                                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 mx-3 my-2 "  >
+                                                            <input class="btn btn-submit" type="button" value="SET1-Q1">
+                                                        </div>
+                                                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 mx-3 my-2" >
+                                                             <input class="btn btn-submit" type="button" value="SET1-Q1">
+                                                        </div>
+                                                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 mx-3 my-2" >
+                                                            <input class="btn btn-submit" type="button" value="SET1-Q1">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 mt-sm-3">
+                                                    <div class="row h-100 text-center">
+                                                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 mx-3 my-2" >
+                                                            <input class="btn btn-submit" type="button" value="SET1-Q1">
+                                                        </div>
+                                                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 mx-3 my-2">
+                                                             <input class="btn btn-submit" type="button" value="SET1-Q1">
+                                                        </div>
+                                                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 mx-3 my-2">
+                                                            <input class="btn btn-submit" type="button" value="SET1-Q1">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>   
+                                                   
+                                            
+                                            <!--**********************************************************************************************************-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <!--*********************************VARIABLE CONTAINER OR FOTTER****************************************** -->
+                        <div class="col-sm-12 col-lg-12 col-md-12 variable-container" >
+
+                            <ul  class="p-0">
+                                <li class='variable-tag'><img src='image/tag.svg' alt='tag icon'></li>
+                                <li class='variable-bg  text-center'><a href="#">Variables</a></li>
+                                <li class='variable-bg  text-center'><a href="#">Strings</a></li>
+                                <li class='variable-bg  text-center'><a href="#">looping</a></li>
+                                <li class='variable-bg  text-center'><a href="#">Math</a></li>
+                                <li class='variable-bg  text-center'><a href="#">Character</a></li>
+                                <li class='variable-btn text-center'>
+                                    <button><i class="material-icons">navigate_before</i></button>
+                                    <p class='text-center'>Next</p>
+                                    <button><i class="material-icons">navigate_next</i></button>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+                <!--*********************************************************texteditor and console***************************** -->
+                <div class="col-lg-12 col-sm-12 col-md-12 col-xl-6 h-100 guvi-ide" >
+                    <div class="row h-100">
+                        <div id="ide-area" class="col-lg-12 col-sm-12 col-md-12 col-xl-12 gh-75" >
+                            <div class="row  h-100">
+                                <div class="col-lg-12 col-sm-12 col-md-12 col-xl-12 h-5 p-0" >
+                                    <div class="programme-title text-center inline">
+                                        <p id="programme_name" >text.py</p>
+
+                                    </div>
+                                        <ul class="float-right inline p-0-sm text-center">
+                                            <li class="inline">
+                                                <select id="theme" class="selectors">
+                                                    <option>dracula</option>
+                                                    <option>eclipse</option>
+                                                    <option>3024-day</option>
+                                                    <option>abcdef</option>
+                                                    <option>ambiance</option>
+                                                    <option>ambiance-mobile</option>
+                                                    <option>base16-dark</option>
+                                                    <option>base16-light</option>
+                                                    <option>duotone-light</option>
+                                                    <option>the-matrix</option>
+                                                    <option>xq-dark</option>
+                                                </select>
+                                            </li>
+                                            <li  class="inline">
+                                                <select id="langauge" class="selectors">
+                                                    <option value="clike">java</option>
+                                                    <option value="python">python</option>
+                                                    <option value="clike">c++</option>
+                                                    <option value="htmlembedded">html</option>
+                                                    <option value="css">css</option>
+                                                    <option value="javascript">javascript</option>
+                                                    <option value="php">php</option>
+                                                </select>
+                                            </li>
+                                            <li class="inline">
+                                                <i class="material-icons ">fullscreen</i>
+                                            </li>
+                                        </ul>
+
+                                </div>
+                                <div id="texteditor" class="col-lg-12 col-sm-12 col-md-12 col-xl-12 h-95 p-0" style="background-color: black;">
+                                    <textarea id="ide"> </textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div  id="console-area" class="col-lg-12 col-sm-12 col-md-12 col-xl-12 gh-25" style="background-color: green;">
+                            <div class="row h-100">
+                                <div id="testcase-title" class="col-sm-12 col-md-12 col-xl-12 col-lg-12  gh-25 testcase-title " >
+                                    <button id="up-btn" class="up "><img src="image/union.svg"></button>
+                                    <button id="down-btn" class="down " style="display:none"><img src="image/union.png"></button>
+                                    <button id="run" class="run-btn float-left">RUN</button>
+                                    <ul id="test-console-tab">
+                                        <li class="inline selectors padding">Testcase</li>
+                                        <li class="inline selectors padding">Console</li>
+                                    </ul>
+
+                                </div>
+                                <div id="console-test" class="col-sm-12 col-md-12 col-xl-12 col-lg-12 h-75 test-console-container scroll" >
+                                    <ul id="testcases" >
+                                        <li class="testcase-btn list-item">
+                                            <img src="image/down.svg">
+                                            <span class="text-center" data-toggle="collapse" data-target="#test1" aria-expanded="false" aria-controls="test1">Testcase 1</span>
+                                            <img src="image/tick-finished.svg">
+                                            <div id="test1" class="collapse" data-parent="#testcases">
+                                                <p>
+                                                    For param1 = 1 and param2 = 2, the output should be
+                                                    add(param1, param2) = 3.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="testcase-btn list-item">
+                                            <img src="image/down.svg">
+                                            <span class="text-center collapsed" data-toggle="collapse" data-target="#test2" aria-expanded="false" aria-controls="test2">Testcase 1</span>
+                                            <img src="image/tick-finished.svg">
+                                            <div id="test2" class="collapse" data-parent="#testcases">
+                                                <p>
+                                                    For param1 = 1 and param2 = 2, the output should be
+                                                    add(param1, param2) = 3.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="testcase-btn list-item">
+                                            <img src="image/down.svg">
+                                            <span class="text-center collapsed" data-toggle="collapse" data-target="#test3" aria-expanded="false" aria-controls="test3">Testcase 1</span>
+                                            <img src="image/tick-finished.svg">
+                                            <div id="test3" class="collapse" data-parent="#testcases">
+                                                <p>
+                                                    For param1 = 1 and param2 = 2, the output should be
+                                                    add(param1, param2) = 3.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="testcase-btn list-item">
+                                            <img src="image/down.svg">
+                                            <span class="text-center collapsed" data-toggle="collapse" data-target="#test4" aria-expanded="false" aria-controls="test4">Testcase 1</span>
+                                            <img src="image/tick-finished.svg">
+                                            <div id="test4" class="collapse" data-parent="#testcases">
+                                                <p>
+                                                    For param1 = 1 and param2 = 2, the output should be
+                                                    add(param1, param2) = 3.
+                                                </p>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </body>
+</html>
